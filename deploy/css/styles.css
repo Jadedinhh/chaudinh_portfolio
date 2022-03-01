@@ -359,6 +359,18 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Buttons
 ============= */
