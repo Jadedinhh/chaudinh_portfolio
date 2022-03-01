@@ -355,6 +355,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
 /* =============
     Buttons
 ============= */
