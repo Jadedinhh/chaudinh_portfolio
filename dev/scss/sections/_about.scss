@@ -2,9 +2,27 @@
     padding: 64px 0;
     background-color: black;
 
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+
+
+    @include lg{
+        padding: 74px 0;
+    }
+
     >div{
+      grid-area: header;
+        
         #about-content{
             color: white;
+            text-align: center;
+            h1{
+                margin-bottom: 15px;
+                font-family: 'Cormorant Garamond', serif;
+                font-style: italic;
+                font-size: rem-calc(40);
+            }
         }
     }
     }

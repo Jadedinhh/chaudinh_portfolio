@@ -432,7 +432,7 @@ header > div {
   grid-area: header;
   display: grid;
   grid-area: header;
-  grid-template-areas: " logo lines" "nav nav";
+  grid-template-areas: " logo burger" "nav nav";
   grid-template-columns: 30% auto;
 }
 @media (min-width: 1024px) {
@@ -462,18 +462,18 @@ header > div #logo-container a:visited {
   }
 }
 header > div #burger-container {
-  grid-area: lines;
   cursor: pointer;
-  width: 40px;
-  height: 10px;
   position: absolute;
+  grid-area: burger;
+  height: 50px;
+  width: 50px;
 }
 @media (min-width: 768px) {
   header > div #burger-container {
     display: none !important;
   }
 }
-header > div #burger-container div span {
+header > div #burger-container #burger span {
   width: 100%;
   margin-top: 20px;
   height: 3px;
@@ -483,7 +483,7 @@ header > div #burger-container div span {
   width: 100%;
   background-color: white;
 }
-header > div #burger-container div span:nth-child(2) {
+header > div #burger-container #burger span:nth-child(2) {
   top: 16px;
   width: 100%;
 }
@@ -497,7 +497,7 @@ header > div #nav-container {
 #hero {
   margin-top: -170px;
 }
-#hero div {
+#hero > div {
   background-image: url("../img/m&m/mai.png");
   background-position: center;
   background-size: cover;
@@ -507,13 +507,14 @@ header > div #nav-container {
   justify-content: center;
   align-items: center;
 }
-#hero div #hero-content {
+#hero > div #hero-content {
   color: #FE812F;
   font-weight: 700;
   font-size: 1.875rem;
   text-align: center;
+  margin: 0 16px;
 }
-#hero div #hero-content p {
+#hero > div #hero-content p {
   display: block;
   margin-bottom: 15px;
 }
@@ -521,7 +522,43 @@ header > div #nav-container {
 #about {
   padding: 64px 0;
   background-color: black;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+@media (min-width: 1024px) {
+  #about {
+    padding: 74px 0;
+  }
+}
+#about > div {
+  grid-area: header;
 }
 #about > div #about-content {
   color: white;
+  text-align: center;
+}
+#about > div #about-content h1 {
+  margin-bottom: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+#quote1 {
+  background-color: black;
+  padding-bottom: 64px;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #quote1 {
+    padding-bottom: 74px;
+  }
+}
+#quote1 h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 1.875rem;
+  margin-bottom: 15px;
 }

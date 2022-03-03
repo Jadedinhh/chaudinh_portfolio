@@ -19,7 +19,7 @@ header {
 
         display: grid;
         grid-area: header;
-        grid-template-areas: " logo lines"
+        grid-template-areas: " logo burger"
                                "nav nav";
         grid-template-columns: 30% auto;
 
@@ -57,20 +57,20 @@ header {
 
         #burger-container {
 
-            grid-area: lines;
+            
 
             cursor: pointer;
-            width: 40px;
-            height: 10px;
             position: absolute;
-
+            grid-area: burger;
+            height: 50px;
+            width: 50px;
 
 
             @include md {
                 display: none !important;
             }
 
-            div {
+            #burger {
 
                 span {
                     width: 100%;

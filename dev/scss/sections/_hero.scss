@@ -1,7 +1,8 @@
 #hero{
     margin-top: -170px;
+
     
-    div{
+    >div{
     background-image: url("../img/m&m/mai.png");
     // background-image: linear-gradient($burnt-orange, black);
     background-position: center;
@@ -12,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+ 
 
 
     #hero-content{
@@ -19,11 +21,14 @@
         font-weight: 700;
         font-size: rem-calc(30);
         text-align: center;
+        margin: 0 16px;
+
 
      p{
          display: block;
          margin-bottom: 15px;
      }
+     
     }
     }
   
