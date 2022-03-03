@@ -2,7 +2,8 @@
     Typography
 ============= */
 body{
-    font-family: 'Cormorant Garamond', serif;
+    // font-family: 'Cormorant Garamond', serif;
+    font-family: 'Quicksand', sans-serif;
 
 }
 
@@ -16,4 +17,20 @@ ul{
     li{
         list-style: none;
     }
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+figure{ 
+    padding: 0;
+    margin: 0;
 }
