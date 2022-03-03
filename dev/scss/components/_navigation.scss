@@ -1,3 +1,30 @@
 /* =============
     Navigation
 ============= */
+#nav-container{
+   
+
+    ul{
+        @include md {
+           text-align: right;
+        }
+
+        li{
+            a:link,
+            a:visited {
+                color:$burnt-orange;
+                font-size: rem-calc(18);
+                font-weight: 400;
+                transition: 0.25s;
+        
+                &:hover {
+                    color: white;
+                }
+        
+                @include lg {
+                    font-size: rem-calc(20);
+                }
+            }
+        }
+    }
+}

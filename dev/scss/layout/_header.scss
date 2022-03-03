@@ -1,3 +1,100 @@
 /* =============
     Header
 ============= */
+header {
+    padding: 20px 0;
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+    // background-image: linear-gradient(to right, $burnt-orange, black );
+    background-color: black;
+
+
+    >div {
+
+        grid-area: header;
+
+        display: grid;
+        grid-area: header;
+        grid-template-areas: " logo burger"
+                               "nav nav";
+        grid-template-columns: 30% auto;
+
+        
+
+        @include lg {}
+
+        #logo-container {
+
+
+            grid-area: logo;
+
+            margin-bottom: 15px;
+
+
+            a:link,
+            a:visited {
+                color: $neon-orange;
+                font-size: rem-calc(25);
+                font-weight: 500;
+                transition: 0.25s;
+
+                &:hover {
+                    color: $mint;
+                }
+
+                @include lg {
+                    font-size: rem-calc(36);
+                }
+            }
+        }
+
+
+        #burger-container {
+
+            grid-area: burger;
+
+            cursor: pointer;
+            width: 40px;
+            height: 10px;
+            position: absolute;
+
+
+
+            @include md {
+                display: none !important;
+            }
+
+            div {
+                grid-area: burger;
+                span {
+                    width: 100%;
+                    margin-top: 20px;
+                    height: 3px;
+                    position: absolute;
+                    top: 50;
+                    right: 0;
+                    width: 100%;
+                    background-color: white;
+
+                    &:nth-child(2) {
+                        top: 16px;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+
+        #nav-container {
+            grid-area: nav;
+
+        }
+    }
+
+
+}

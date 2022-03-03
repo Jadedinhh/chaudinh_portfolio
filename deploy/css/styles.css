@@ -395,9 +395,101 @@ figure {
 /* =============
     Navigation
 ============= */
+@media (min-width: 768px) {
+  #nav-container ul {
+    text-align: right;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #D5782A;
+  font-size: 1.125rem;
+  font-weight: 400;
+  transition: 0.25s;
+}
+#nav-container ul li a:link:hover,
+#nav-container ul li a:visited:hover {
+  color: white;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    font-size: 1.25rem;
+  }
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 20px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+  background-color: black;
+}
+header > div {
+  grid-area: header;
+  display: grid;
+  grid-area: header;
+  grid-template-areas: " logo burger" "nav nav";
+  grid-template-columns: 30% auto;
+}
+header > div #logo-container {
+  grid-area: logo;
+  margin-bottom: 15px;
+}
+header > div #logo-container a:link,
+header > div #logo-container a:visited {
+  color: #FE812F;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  transition: 0.25s;
+}
+header > div #logo-container a:link:hover,
+header > div #logo-container a:visited:hover {
+  color: #96B999;
+}
+@media (min-width: 1024px) {
+  header > div #logo-container a:link,
+header > div #logo-container a:visited {
+    font-size: 2.25rem;
+  }
+}
+header > div #burger-container {
+  grid-area: burger;
+  cursor: pointer;
+  width: 40px;
+  height: 10px;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  header > div #burger-container {
+    display: none !important;
+  }
+}
+header > div #burger-container div {
+  grid-area: burger;
+}
+header > div #burger-container div span {
+  width: 100%;
+  margin-top: 20px;
+  height: 3px;
+  position: absolute;
+  top: 50;
+  right: 0;
+  width: 100%;
+  background-color: white;
+}
+header > div #burger-container div span:nth-child(2) {
+  top: 16px;
+  width: 100%;
+}
+header > div #nav-container {
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */
