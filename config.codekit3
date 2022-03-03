@@ -109,6 +109,14 @@
       "oAP" : "\/dev\/content\/photography.html",
       "oF" : 0
     },
+    "\/dev\/content\/quote.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/quote.html",
+      "oF" : 0
+    },
     "\/dev\/content\/tattoos.kit" : {
       "cB" : 0,
       "ft" : 2048,
