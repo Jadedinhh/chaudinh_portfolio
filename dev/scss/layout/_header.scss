@@ -10,7 +10,7 @@ header {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
     // background-image: linear-gradient(to right, $burnt-orange, black );
-    background-color: black;
+    // background-color: black;
 
 
     >div {
@@ -19,13 +19,15 @@ header {
 
         display: grid;
         grid-area: header;
-        grid-template-areas: " logo burger"
+        grid-template-areas: " logo lines"
                                "nav nav";
         grid-template-columns: 30% auto;
 
         
 
-        @include lg {}
+        @include lg {
+            grid-template-areas: "logo nav";
+        }
 
         #logo-container {
 
@@ -55,7 +57,7 @@ header {
 
         #burger-container {
 
-            grid-area: burger;
+            grid-area: lines;
 
             cursor: pointer;
             width: 40px;
@@ -69,7 +71,7 @@ header {
             }
 
             div {
-                grid-area: burger;
+
                 span {
                     width: 100%;
                     margin-top: 20px;

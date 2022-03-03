@@ -1,0 +1,30 @@
+#hero{
+    margin-top: -170px;
+    
+    div{
+    background-image: url("../img/m&m/mai.png");
+    // background-image: linear-gradient($burnt-orange, black);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    #hero-content{
+        color: $neon-orange;
+        font-weight: 700;
+        font-size: rem-calc(30);
+        text-align: center;
+
+     p{
+         display: block;
+         margin-bottom: 15px;
+     }
+    }
+    }
+  
+}

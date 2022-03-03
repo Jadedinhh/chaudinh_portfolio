@@ -427,14 +427,18 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
-  background-color: black;
 }
 header > div {
   grid-area: header;
   display: grid;
   grid-area: header;
-  grid-template-areas: " logo burger" "nav nav";
+  grid-template-areas: " logo lines" "nav nav";
   grid-template-columns: 30% auto;
+}
+@media (min-width: 1024px) {
+  header > div {
+    grid-template-areas: "logo nav";
+  }
 }
 header > div #logo-container {
   grid-area: logo;
@@ -458,7 +462,7 @@ header > div #logo-container a:visited {
   }
 }
 header > div #burger-container {
-  grid-area: burger;
+  grid-area: lines;
   cursor: pointer;
   width: 40px;
   height: 10px;
@@ -468,9 +472,6 @@ header > div #burger-container {
   header > div #burger-container {
     display: none !important;
   }
-}
-header > div #burger-container div {
-  grid-area: burger;
 }
 header > div #burger-container div span {
   width: 100%;
@@ -493,3 +494,34 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
+#hero {
+  margin-top: -170px;
+}
+#hero div {
+  background-image: url("../img/m&m/mai.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero div #hero-content {
+  color: #FE812F;
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-align: center;
+}
+#hero div #hero-content p {
+  display: block;
+  margin-bottom: 15px;
+}
+
+#about {
+  padding: 64px 0;
+  background-color: black;
+}
+#about > div #about-content {
+  color: white;
+}
