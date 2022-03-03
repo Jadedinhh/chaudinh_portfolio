@@ -356,7 +356,13 @@ template {
     Typography
 ============= */
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Fahkwang", sans-serif;
+}
+body .number {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 3.75rem;
+  margin-bottom: 15px;
 }
 
 a {
@@ -558,7 +564,25 @@ header > div #nav-container {
 }
 #quote1 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.875rem;
   margin-bottom: 15px;
+}
+
+#hanoi {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hanoi .";
+  background-color: black;
+  padding-bottom: 64px;
+  color: white;
+}
+#hanoi > div {
+  grid-area: hanoi;
+}
+#hanoi > div #hanoi-content {
+  color: white;
+}
+#hanoi > div #hanoi-image {
+  background-image: url("../img/hanoi_poster/hanoi-poster.png");
 }

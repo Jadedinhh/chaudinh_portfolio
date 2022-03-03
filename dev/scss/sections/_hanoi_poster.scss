@@ -1,0 +1,23 @@
+#hanoi{
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hanoi .";
+    background-color: black;
+    padding-bottom: 64px;
+
+    color: white;
+
+     >div{
+         grid-area: hanoi;
+
+         #hanoi-content{
+             color: white;
+         }
+
+         #hanoi-image{
+             background-image: url("../img/hanoi_poster/hanoi-poster.png");
+             
+         }
+     }
+}

@@ -2,8 +2,14 @@
     Typography
 ============= */
 body{
-    // font-family: 'Cormorant Garamond', serif;
-    font-family: 'Quicksand', sans-serif;
+ 
+    font-family: 'Fahkwang', sans-serif;
+    .number{
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        font-size: rem-calc(60);
+        margin-bottom: 15px;
+    }
 
 }
 
