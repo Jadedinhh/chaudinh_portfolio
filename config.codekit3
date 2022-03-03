@@ -147,6 +147,14 @@
       "oAP" : "\/dev\/content\/contact.html",
       "oF" : 0
     },
+    "\/dev\/content\/gdfiles.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/gdfiles.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hanoi_poster.kit" : {
       "cB" : 0,
       "ft" : 2048,
