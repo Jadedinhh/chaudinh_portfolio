@@ -147,12 +147,12 @@
       "oAP" : "\/dev\/content\/contact.html",
       "oF" : 0
     },
-    "\/dev\/content\/hanoi-poster.kit" : {
+    "\/dev\/content\/hanoi_poster.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/hanoi-poster.html",
+      "oAP" : "\/dev\/content\/hanoi_poster.html",
       "oF" : 0
     },
     "\/dev\/content\/hero.kit" : {
@@ -185,6 +185,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/photography.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/pullquote.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/pullquote.html",
       "oF" : 0
     },
     "\/dev\/content\/quote.kit" : {
@@ -450,7 +458,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hanoi-poster.scss" : {
+    "\/dev\/scss\/sections\/_hanoi_poster.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -459,7 +467,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hanoi-poster.css",
+      "oAP" : "\/dev\/scss\/sections\/_hanoi_poster.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -520,6 +528,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_photography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_pullquote.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_pullquote.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_quote.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_quote.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
