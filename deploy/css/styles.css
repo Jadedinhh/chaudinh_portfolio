@@ -582,7 +582,10 @@ header > div #nav-container {
 }
 #hanoi > div #hanoi-content {
   color: white;
+  margin-bottom: 15px;
 }
 #hanoi > div #hanoi-image {
   background-image: url("../img/hanoi_poster/hanoi-poster.png");
+  background-position: center;
+  height: 800px;
 }

@@ -13,11 +13,13 @@
 
          #hanoi-content{
              color: white;
+             margin-bottom: 15px;
          }
 
          #hanoi-image{
              background-image: url("../img/hanoi_poster/hanoi-poster.png");
-             
+             background-position: center;
+             height: 800px;
          }
      }
 }
