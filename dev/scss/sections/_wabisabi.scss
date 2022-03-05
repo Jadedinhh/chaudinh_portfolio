@@ -1,0 +1,35 @@
+#wabisabi {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". wabisabi .";
+    background-color: black;
+    padding-bottom: 64px;
+
+    color: white;
+
+    >div {
+        grid-area: wabisabi;
+
+        @include md{
+            display: grid;
+            grid-template-columns: auto 32px auto;
+            grid-template-areas: "wabisabi-image .  ."
+                                 "wabisabi-image . wabisabi-content";
+        }
+
+        #wabisabi-image {
+            background-image: url("../img/wabisabi/wabisabi1.png");
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+
+         @include md{
+             grid-area: wabisabi-image;
+         }
+        }
+
+        #wabisabi-content {
+            grid-area: wabisabi-content;
+        }
+    }
+}

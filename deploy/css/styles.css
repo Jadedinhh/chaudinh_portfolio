@@ -581,19 +581,76 @@ header > div #nav-container {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hanoi .";
   background-color: black;
-  padding-bottom: 64px;
+  padding: 64px 0;
   color: white;
+}
+@media (min-width: 768px) {
+  #hanoi {
+    grid-template-columns: 32px auto 32px;
+  }
 }
 #hanoi > div {
   grid-area: hanoi;
 }
+@media (min-width: 768px) {
+  #hanoi > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". hanoi-image" "hanoi-content hanoi-image";
+  }
+}
 #hanoi > div #hanoi-content {
   color: white;
   margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  #hanoi > div #hanoi-content {
+    grid-area: hanoi-content;
+    justify-content: right;
+  }
 }
 #hanoi > div #hanoi-image {
   background-image: url("../img/hanoi_poster/hanoi-poster.png");
   background-position: cover;
   background-size: cover;
   height: 700px;
+}
+@media (min-width: 768px) {
+  #hanoi > div #hanoi-image {
+    grid-area: hanoi-image;
+    height: 781px;
+  }
+}
+
+#wabisabi {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". wabisabi .";
+  background-color: black;
+  padding-bottom: 64px;
+  color: white;
+}
+#wabisabi > div {
+  grid-area: wabisabi;
+}
+@media (min-width: 768px) {
+  #wabisabi > div {
+    display: grid;
+    grid-template-columns: auto 32px auto;
+    grid-template-areas: "wabisabi-image .  ." "wabisabi-image . wabisabi-content";
+  }
+}
+#wabisabi > div #wabisabi-image {
+  background-image: url("../img/wabisabi/wabisabi1.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+@media (min-width: 768px) {
+  #wabisabi > div #wabisabi-image {
+    grid-area: wabisabi-image;
+  }
+}
+#wabisabi > div #wabisabi-content {
+  grid-area: wabisabi-content;
 }
