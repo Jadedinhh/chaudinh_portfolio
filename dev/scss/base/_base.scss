@@ -7,7 +7,16 @@ body{
     .number{
         font-family: 'Cormorant Garamond', serif;
         font-style: italic;
-        font-size: rem-calc(100);
+        font-weight: 100;
+        font-stretch: 50%;
+        font-size: rem-calc(120);
         // margin-bottom: 15px;
+    }
+
+
+    .categories{
+        font-weight: 300;
+        font-size: rem-calc(60);
+        margin-bottom: 30px;
     }
 }
