@@ -18,8 +18,9 @@
 
          #hanoi-image{
              background-image: url("../img/hanoi_poster/hanoi-poster.png");
-             background-position: center;
-             height: 800px;
+             background-position: cover;
+             background-size: cover;
+             height: 700px;
          }
      }
 }

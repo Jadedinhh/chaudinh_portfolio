@@ -352,17 +352,17 @@ template {
 /* =============
     Base
 ============= */
+body .number {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 6.25rem;
+}
+
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Fahkwang", sans-serif;
-}
-body .number {
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-size: 3.75rem;
-  margin-bottom: 15px;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 a {
@@ -454,7 +454,7 @@ header > div #logo-container a:link,
 header > div #logo-container a:visited {
   color: #FE812F;
   font-size: 1.5625rem;
-  font-weight: 500;
+  font-weight: 400;
   transition: 0.25s;
 }
 header > div #logo-container a:link:hover,
@@ -464,7 +464,7 @@ header > div #logo-container a:visited:hover {
 @media (min-width: 1024px) {
   header > div #logo-container a:link,
 header > div #logo-container a:visited {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
   }
 }
 header > div #burger-container {
@@ -586,6 +586,7 @@ header > div #nav-container {
 }
 #hanoi > div #hanoi-image {
   background-image: url("../img/hanoi_poster/hanoi-poster.png");
-  background-position: center;
-  height: 800px;
+  background-position: cover;
+  background-size: cover;
+  height: 700px;
 }
