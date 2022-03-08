@@ -1,0 +1,21 @@
+#photography{
+    padding-bottom: 64px;
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". photography .";
+    background-color: black;
+
+    >div{
+     grid-area: photography;
+
+     #p-image{
+         background-image: url("../img/m&m/Mai1.png");
+         background-position: cover;
+         background-size: cover;
+         height: 680px;
+     }
+
+
+    }
+}

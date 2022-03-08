@@ -762,3 +762,20 @@ footer > div #running-icon a:visited {
 #univers > div #u-content {
   color: white;
 }
+
+#photography {
+  padding-bottom: 64px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". photography .";
+  background-color: black;
+}
+#photography > div {
+  grid-area: photography;
+}
+#photography > div #p-image {
+  background-image: url("../img/m&m/Mai1.png");
+  background-position: cover;
+  background-size: cover;
+  height: 680px;
+}
