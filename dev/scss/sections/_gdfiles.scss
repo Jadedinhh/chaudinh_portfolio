@@ -1,10 +1,65 @@
-#gdfiles{
-      display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". gdfiles .";
-    background-color: $black;
+#gdfiles {
+   display: grid;
+   grid-template-columns: 16px auto 16px;
+   grid-template-areas: ". gdfiles .";
+   background-color: $black;
 
-    >div{
- grid-area: gdfiles;
-    }
+   padding-top: 64px;
+
+
+   >div {
+      grid-area: gdfiles;
+
+
+      ul {
+         @include md {
+            gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "f1 f2"
+            "f3 f4"
+            "f5 f6";
+         }
+
+         li {
+            //  padding-bottom: 64px;
+
+            #f1 {
+               @include md {
+                  grid-area: f1;
+               }
+            }
+
+            #f2 {
+               @include md {
+                  grid-area: f2;
+               }
+            }
+
+            #f3 {
+               @include md {
+                  grid-area: f3;
+               }
+            }
+
+            #f4 {
+               @include md {
+                  grid-area: f4;
+               }
+            }
+
+            #f5 {
+               @include md {
+                  grid-area: f5;
+               }
+            }
+
+            #f6 {
+               @include md {
+                  grid-area: f6;
+               }
+            }
+         }
+      }
+   }
 }

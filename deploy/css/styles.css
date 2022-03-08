@@ -657,9 +657,48 @@ footer > div #running-icon a:visited {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". gdfiles .";
   background-color: #000;
+  padding-top: 64px;
 }
 #gdfiles > div {
   grid-area: gdfiles;
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f3 f4" "f5 f6";
+  }
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li #f1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li #f2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li #f3 {
+    grid-area: f3;
+  }
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li #f4 {
+    grid-area: f4;
+  }
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li #f5 {
+    grid-area: f5;
+  }
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li #f6 {
+    grid-area: f6;
+  }
 }
 
 @media (min-width: 768px) {
