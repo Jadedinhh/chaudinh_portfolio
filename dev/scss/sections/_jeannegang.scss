@@ -1,4 +1,4 @@
-#jeanne{
+#jeanne {
     padding: 64px 0;
 
 
@@ -7,18 +7,18 @@
     grid-template-areas: ". jeanne .";
     background-color: black;
 
-    >div{
+    >div {
         grid-area: jeanne;
 
-        #jeanne-image{
-background-image: url("../img/jeanne-gang/jeanne,png");
-background-size: cover;
-background-position: center;
-height: 600px;
+        #jeanne-image {
+            background-image: url("../img/jeanne-gang/jeanne.png");
+            background-size: cover;
+            background-position: center;
+            height: 600px;
 
         }
 
-        #jeanne-content{
+        #jeanne-content {
             color: white;
         }
     }

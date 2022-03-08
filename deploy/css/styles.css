@@ -515,6 +515,44 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
+footer {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+  background-image: linear-gradient(black, #DBDAD6);
+}
+footer > div {
+  grid-area: footer;
+}
+footer > div h1 {
+  margin-bottom: 15px;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #EF4136;
+}
+footer > div h1:hover {
+  color: #FE812F;
+}
+footer > div #running-icon a:link,
+footer > div #running-icon a:visited {
+  color: #FE812F;
+  font-size: 1.125rem;
+  font-weight: 300;
+  transition: 0.25s;
+  font-family: "Averia Libre", cursive;
+}
+footer > div #running-icon a:link:hover,
+footer > div #running-icon a:visited:hover {
+  color: white;
+}
+@media (min-width: 1024px) {
+  footer > div #running-icon a:link,
+footer > div #running-icon a:visited {
+    font-size: 1.25rem;
+  }
+}
+
 #hero {
   margin-top: -250px;
 }
@@ -639,7 +677,7 @@ header > div #nav-container {
   background-image: url("../img/hanoi_poster/hanoi-poster.png");
   background-position: cover;
   background-size: cover;
-  height: 700px;
+  height: 680px;
 }
 @media (min-width: 768px) {
   #hanoi > div #hanoi-image {
@@ -670,7 +708,7 @@ header > div #nav-container {
   background-image: url("../img/wabisabi/wabisabi1.png");
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 590px;
 }
 @media (min-width: 768px) {
   #wabisabi > div #wabisabi-image {
@@ -712,11 +750,31 @@ header > div #nav-container {
   grid-area: jeanne;
 }
 #jeanne > div #jeanne-image {
-  background-image: url("../img/jeanne-gang/jeanne,png");
+  background-image: url("../img/jeanne-gang/jeanne.png");
   background-size: cover;
   background-position: center;
   height: 600px;
 }
 #jeanne > div #jeanne-content {
+  color: white;
+}
+
+#univers {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". univers.";
+  background-color: black;
+}
+#univers > div {
+  grid-area: univers;
+}
+#univers > div #u-image {
+  background-image: url("../img/univers/univers1.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+#univers > div #u-content {
   color: white;
 }
