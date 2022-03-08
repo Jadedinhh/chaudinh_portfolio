@@ -14,8 +14,9 @@
             a:visited {
                 color:$blood-orange;
                 font-size: rem-calc(18);
-                font-weight: 400;
+                font-weight: 300;
                 transition: 0.25s;
+                font-family: 'Averia Libre', cursive;
         
                 &:hover {
                     color: white;

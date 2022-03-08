@@ -353,23 +353,23 @@ template {
     Base
 ============= */
 body .number {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Averia Libre", cursive;
   font-style: italic;
-  font-weight: 100;
-  font-stretch: 50%;
-  font-size: 7.5rem;
+  font-weight: 300;
+  font-size: 6.25rem;
 }
 body .categories {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 3.75rem;
   margin-bottom: 30px;
+  font-style: italic;
 }
 
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 a {
@@ -417,8 +417,9 @@ figure {
 #nav-container ul li a:visited {
   color: #EF4136;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
   transition: 0.25s;
+  font-family: "Averia Libre", cursive;
 }
 #nav-container ul li a:link:hover,
 #nav-container ul li a:visited:hover {
@@ -471,7 +472,7 @@ header > div #logo-container {
 }
 @media (min-width: 1200px) {
   header > div #logo-container {
-    width: 35%;
+    width: 30%;
   }
 }
 header > div #burger-container {
@@ -536,6 +537,7 @@ header > div #nav-container {
   font-size: 1.875rem;
   text-align: center;
   margin: 0 16px;
+  font-family: "Averia Libre", cursive;
 }
 #hero > div #hero-content p {
   display: block;

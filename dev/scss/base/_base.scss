@@ -5,18 +5,19 @@ body{
     // background-color: black;
 
     .number{
-        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Averia Libre', cursive;
         font-style: italic;
-        font-weight: 100;
-        font-stretch: 50%;
-        font-size: rem-calc(120);
+        font-weight: 300;
+        font-size: rem-calc(100);
         // margin-bottom: 15px;
     }
 
 
     .categories{
-        font-weight: 300;
+        font-weight: 500;
         font-size: rem-calc(60);
         margin-bottom: 30px;
+        font-style: italic;
+        
     }
 }
