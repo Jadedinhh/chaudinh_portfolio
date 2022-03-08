@@ -6,60 +6,99 @@
 
    padding-top: 64px;
 
+   @include lg {
+      grid-template-columns: auto 800px auto;
+  }
+
+  
+  @include xl {
+      grid-template-columns: auto 1200px auto;
+  }
+
 
    >div {
       grid-area: gdfiles;
 
+  @include lg{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "list-left list-right";
+      gap: 80px;
+  }
+     
 
-      ul {
-         @include md {
-            gap: 30px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: "f1 f2"
-            "f3 f4"
-            "f5 f6";
-         }
+      #list-left{
+         @include md{
+            grid-area: list-left;
+            display: block;
 
-         li {
-            //  padding-bottom: 64px;
-
-            #f1 {
-               @include md {
-                  grid-area: f1;
-               }
-            }
-
-            #f2 {
-               @include md {
-                  grid-area: f2;
-               }
-            }
-
-            #f3 {
-               @include md {
-                  grid-area: f3;
-               }
-            }
-
-            #f4 {
-               @include md {
-                  grid-area: f4;
-               }
-            }
-
-            #f5 {
-               @include md {
-                  grid-area: f5;
-               }
-            }
-
-            #f6 {
-               @include md {
-                  grid-area: f6;
-               }
+            li{
+               padding-bottom: 64px;
+               
             }
          }
       }
+
+      #list-right{
+         @include md{
+            margin-top: 200px;
+            grid-area: list-right;
+
+            li{
+               padding-bottom: 64px;
+            }
+         }
+      }
+      // ul {
+
+      //    // @include md {
+      //    //    gap: 30px;
+      //    //    display: grid;
+      //    //    grid-template-columns: repeat(2, 1fr);
+      //    //    grid-template-areas: "f1 f2"
+      //    //    "f3 f4"
+      //    //    "f5 f6";
+      //    // }
+
+      //    li {
+      //       //  padding-bottom: 64px;
+
+      //       #f1 {
+      //          @include md {
+      //             grid-area: f1;
+      //          }
+      //       }
+
+      //       #f2 {
+      //          @include md {
+      //             grid-area: f2;
+      //          }
+      //       }
+
+      //       #f3 {
+      //          @include md {
+      //             grid-area: f3;
+      //          }
+      //       }
+
+      //       #f4 {
+      //          @include md {
+      //             grid-area: f4;
+      //          }
+      //       }
+
+      //       #f5 {
+      //          @include md {
+      //             grid-area: f5;
+      //          }
+      //       }
+
+      //       #f6 {
+      //          @include md {
+      //             grid-area: f6;
+      //          }
+      //       }
+      //    }
+      // }
    }
 }

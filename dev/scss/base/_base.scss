@@ -11,6 +11,14 @@ body{
         font-size: rem-calc(80);
         margin: 15px 0;
         color: $gray;
+
+        @include md{
+            font-size: rem-calc(40);
+        }
+
+        @include lg{
+            font-size: rem-calc(30);
+        }
     }
 
 
@@ -21,6 +29,12 @@ body{
         // font-style: italic;
         color: white;
        
-        
+        @include md{
+            font-size: rem-calc(40);
+        }
+
+        @include lg{
+            font-size: rem-calc(30);
+        }
     }
 }
