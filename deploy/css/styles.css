@@ -444,6 +444,11 @@ header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
 }
+@media (min-width: 1024px) {
+  header {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 @media (min-width: 1200px) {
   header {
     grid-template-columns: auto 1400px auto;
@@ -589,9 +594,6 @@ footer > div #running-icon a:visited {
   margin-bottom: 15px;
 }
 #hero > div #hero-content p span {
-  font-style: italic;
-}
-#hero > div #hero-content p1 span {
   font-style: italic;
 }
 

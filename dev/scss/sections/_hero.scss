@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
  
-
+     
 
     #hero-content{
         color: $blood-orange;
@@ -42,17 +42,20 @@
 
          span{
              font-style: italic;
+            //  font-weight: 500;
            
          }
      }
 
-     p1{
-         span{
-             font-style: italic;
-         }
-     }
+     
      
     }
     }
   
 }
+// #hero-block{
+//          background-color: $grey;
+//          height: 100vh;
+//          height: 100vh;
+//          width: 100vw;
+//      }
