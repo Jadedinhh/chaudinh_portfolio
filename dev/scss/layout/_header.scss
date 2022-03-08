@@ -9,8 +9,12 @@ header {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
-    // background-image: linear-gradient(to right, $burnt-orange, black );
-    // background-color: black;
+    
+    @include xl {
+        grid-template-columns: auto 1400px auto;
+    }
+
+
 
 
     >div {

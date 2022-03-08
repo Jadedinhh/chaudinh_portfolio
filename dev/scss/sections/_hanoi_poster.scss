@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hanoi .";
-    background-color: black;
+    background-color: $black;
     padding: 64px 0;
 
     color: white;
