@@ -370,7 +370,7 @@ body .categories {
     Typography
 ============= */
 body {
-  font-family: "Averia Libre", cursive;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 a {
@@ -625,21 +625,22 @@ footer > div #running-icon a:visited {
 
 #quote1 {
   background-color: black;
-  padding-bottom: 64px;
   color: white;
-  text-align: center;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". p .";
 }
 @media (min-width: 1024px) {
   #quote1 {
     padding-bottom: 74px;
   }
 }
-#quote1 h1 {
+#quote1 p {
   font-family: "Averia Libre", cursive;
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.875rem;
-  margin-bottom: 15px;
+  grid-area: p;
 }
 
 #hanoi {

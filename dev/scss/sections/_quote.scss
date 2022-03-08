@@ -1,19 +1,24 @@
-#quote1{
+#quote1 {
     background-color: black;
-    padding-bottom: 64px;  
+    // padding-bottom: 64px;  
     color: white;
-    text-align: center;
+    text-align: left;
 
-    @include lg{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". p .";
+
+    @include lg {
         padding-bottom: 74px;
     }
 
-    h1{
+    p {
 
         font-family: 'Averia Libre', cursive;
-        font-style: italic;
-        font-weight: 500;
+        // font-style: italic;
+        font-weight: 300;
         font-size: rem-calc(30);
-        margin-bottom: 15px;
+        grid-area: p;
+
     }
 }
