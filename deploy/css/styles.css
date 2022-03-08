@@ -678,3 +678,17 @@ header > div #nav-container {
 #wabisabi > div #wabisabi-content {
   grid-area: wabisabi-content;
 }
+
+#morean {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". morean .";
+  background-color: black;
+}
+#morean > div {
+  grid-area: morean;
+}
+#morean > div #morean-content {
+  color: white;
+}

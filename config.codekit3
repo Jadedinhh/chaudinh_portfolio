@@ -93,6 +93,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/morean\/MoreanB.jpg" : {
+      "ft" : 16384,
+      "iS" : 54392,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/morean\/MoreanB.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/morean\/MoreanC.jpg" : {
+      "ft" : 16384,
+      "iS" : 149244,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/morean\/MoreanC.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/morean\/MoreanD.jpg" : {
+      "ft" : 16384,
+      "iS" : 26352,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/morean\/MoreanD.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/tattoos\/tattwu.png" : {
       "ft" : 32768,
       "iS" : 336666,
