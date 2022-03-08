@@ -457,23 +457,6 @@ header > div #logo-container {
   grid-area: logo;
   margin-bottom: 15px;
 }
-header > div #logo-container a:link,
-header > div #logo-container a:visited {
-  color: #FE812F;
-  font-size: 1.5625rem;
-  font-weight: 400;
-  transition: 0.25s;
-}
-header > div #logo-container a:link:hover,
-header > div #logo-container a:visited:hover {
-  color: #96B999;
-}
-@media (min-width: 1024px) {
-  header > div #logo-container a:link,
-header > div #logo-container a:visited {
-    font-size: 1.875rem;
-  }
-}
 header > div #burger-container {
   cursor: pointer;
   position: absolute;

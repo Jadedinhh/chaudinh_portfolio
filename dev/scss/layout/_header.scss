@@ -35,23 +35,24 @@ header {
             grid-area: logo;
 
             margin-bottom: 15px;
+            
 
 
-            a:link,
-            a:visited {
-                color: $neon-orange;
-                font-size: rem-calc(25);
-                font-weight: 400;
-                transition: 0.25s;
+            // a:link,
+            // a:visited {
+            //     color: $neon-orange;
+            //     font-size: rem-calc(25);
+            //     font-weight: 400;
+            //     transition: 0.25s;
 
-                &:hover {
-                    color: $mint;
-                }
+            //     &:hover {
+            //         color: $mint;
+            //     }
 
-                @include lg {
-                    font-size: rem-calc(30);
-                }
-            }
+            //     @include lg {
+            //         font-size: rem-calc(30);
+            //     }
+            // }
         }
 
 
