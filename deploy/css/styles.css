@@ -353,23 +353,24 @@ template {
     Base
 ============= */
 body .number {
-  font-family: "Averia Libre", cursive;
+  font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  font-weight: 300;
-  font-size: 6.25rem;
+  font-weight: 500;
+  font-size: 7.5rem;
 }
 body .categories {
   font-weight: 300;
   font-size: 3.75rem;
   margin-bottom: 30px;
   font-style: italic;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Averia Libre", cursive;
 }
 
 a {
@@ -392,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   padding: 0;
   margin: 0;
+  font-weight: 300;
 }
 
 figure {
@@ -696,5 +698,25 @@ header > div #nav-container {
   height: 600px;
 }
 #morean > div #morean-content {
+  color: white;
+}
+
+#jeanne {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". jeanne .";
+  background-color: black;
+}
+#jeanne > div {
+  grid-area: jeanne;
+}
+#jeanne > div #jeanne-image {
+  background-image: url("../img/jeanne-gang/jeanne,png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+#jeanne > div #jeanne-content {
   color: white;
 }
