@@ -12,9 +12,9 @@
 
         @include md{
             display: grid;
-            grid-template-columns: auto 32px auto;
-            grid-template-areas: "wabisabi-image .  ."
-                                 "wabisabi-image . wabisabi-content";
+            grid-template-columns: repeat(2, 1 rl);
+            grid-template-areas: "wabisabi-image  ."
+                                 "wabisabi-image  wabisabi-content";
         }
 
         #wabisabi-image {

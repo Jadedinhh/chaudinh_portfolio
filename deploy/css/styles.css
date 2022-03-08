@@ -660,8 +660,8 @@ header > div #nav-container {
 @media (min-width: 768px) {
   #wabisabi > div {
     display: grid;
-    grid-template-columns: auto 32px auto;
-    grid-template-areas: "wabisabi-image .  ." "wabisabi-image . wabisabi-content";
+    grid-template-columns: repeat(2, 1 rl);
+    grid-template-areas: "wabisabi-image  ." "wabisabi-image  wabisabi-content";
   }
 }
 #wabisabi > div #wabisabi-image {
@@ -688,6 +688,12 @@ header > div #nav-container {
 }
 #morean > div {
   grid-area: morean;
+}
+#morean > div #morean-image {
+  background-image: url("../img/morean/MoreanB.jpg");
+  background-size: cover;
+  background-position: -90px center;
+  height: 600px;
 }
 #morean > div #morean-content {
   color: white;
