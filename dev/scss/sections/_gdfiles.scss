@@ -1,0 +1,10 @@
+#gdfiles{
+      display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gdfiles .";
+    background-color: $black;
+
+    >div{
+ grid-area: gdfiles;
+    }
+}

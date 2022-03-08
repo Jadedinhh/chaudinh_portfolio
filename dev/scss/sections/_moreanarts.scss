@@ -1,12 +1,12 @@
 #morean{
-    padding: 64px 0;
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". morean .";
-    background-color: black;
+    // padding: 64px 0;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". morean .";
+    // background-color: black;
 
     >div{
-        grid-area: morean;
+        // grid-area: morean;
 
         #morean-image{
             background-image: url("../img/morean/MoreanB.jpg");

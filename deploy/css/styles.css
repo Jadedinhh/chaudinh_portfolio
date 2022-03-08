@@ -652,20 +652,20 @@ footer > div #running-icon a:visited {
   line-height: 1.5;
 }
 
-#hanoi {
+#gdfiles {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hanoi .";
+  grid-template-areas: ". gdfiles .";
   background-color: #000;
-  padding: 64px 0;
 }
+#gdfiles > div {
+  grid-area: gdfiles;
+}
+
 @media (min-width: 768px) {
   #hanoi {
     grid-template-columns: 32px auto 32px;
   }
-}
-#hanoi > div {
-  grid-area: hanoi;
 }
 #hanoi > div #hanoi-content {
   margin-bottom: 15px;
@@ -678,15 +678,7 @@ footer > div #running-icon a:visited {
 }
 
 #wabisabi {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". wabisabi .";
-  background-color: black;
-  padding: 64px 0;
   color: white;
-}
-#wabisabi > div {
-  grid-area: wabisabi;
 }
 #wabisabi > div #wabisabi-image {
   background-image: url("../img/wabisabi/wabisabi1.png");
@@ -703,16 +695,6 @@ footer > div #running-icon a:visited {
   grid-area: wabisabi-content;
 }
 
-#morean {
-  padding: 64px 0;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". morean .";
-  background-color: black;
-}
-#morean > div {
-  grid-area: morean;
-}
 #morean > div #morean-image {
   background-image: url("../img/morean/MoreanB.jpg");
   background-size: cover;
@@ -723,16 +705,6 @@ footer > div #running-icon a:visited {
   color: white;
 }
 
-#jeanne {
-  padding: 64px 0;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". jeanne .";
-  background-color: black;
-}
-#jeanne > div {
-  grid-area: jeanne;
-}
 #jeanne > div #jeanne-image {
   background-image: url("../img/jeanne-gang/jeanne.png");
   background-size: cover;
@@ -743,16 +715,6 @@ footer > div #running-icon a:visited {
   color: white;
 }
 
-#univers {
-  padding: 64px 0;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". univers.";
-  background-color: black;
-}
-#univers > div {
-  grid-area: univers;
-}
 #univers > div #u-image {
   background-image: url("../img/univers/univers1.png");
   background-size: cover;
@@ -763,16 +725,6 @@ footer > div #running-icon a:visited {
   color: white;
 }
 
-#photography {
-  padding-bottom: 64px;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". photography .";
-  background-color: black;
-}
-#photography > div {
-  grid-area: photography;
-}
 #photography > div #p-image {
   background-image: url("../img/m&m/Mai1.png");
   background-position: cover;

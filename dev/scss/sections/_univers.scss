@@ -1,13 +1,13 @@
 #univers{
-    padding: 64px 0;
+    // padding: 64px 0;
 
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". univers.";
-    background-color: black;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". univers.";
+    // background-color: black;
 
 >div{
-    grid-area: univers;
+    // grid-area: univers;
 
     #u-image{
         background-image: url("../img/univers/univers1.png");

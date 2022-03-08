@@ -1,14 +1,14 @@
 #jeanne {
-    padding: 64px 0;
+    // padding: 64px 0;
 
 
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". jeanne .";
-    background-color: black;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". jeanne .";
+    // background-color: black;
 
     >div {
-        grid-area: jeanne;
+        // grid-area: jeanne;
 
         #jeanne-image {
             background-image: url("../img/jeanne-gang/jeanne.png");

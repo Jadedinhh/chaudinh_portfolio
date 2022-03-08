@@ -1,10 +1,10 @@
 #hanoi{
 
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hanoi .";
-    background-color: $black;
-    padding: 64px 0;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". hanoi .";
+    // background-color: $black;
+    // padding: 64px 0;
 
     // color: white;
 
@@ -13,7 +13,7 @@
     }
 
      >div{
-         grid-area: hanoi;
+        //  grid-area: hanoi;
          
         //  @include md{
         //       display: grid;
