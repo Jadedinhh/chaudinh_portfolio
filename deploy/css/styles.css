@@ -353,24 +353,23 @@ template {
     Base
 ============= */
 body .number {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Averia Libre", cursive;
   font-style: italic;
-  font-weight: 500;
-  font-size: 7.5rem;
+  font-weight: 400;
+  font-size: 5rem;
+  margin: 15px 0;
 }
 body .categories {
-  font-weight: 300;
-  font-size: 3.75rem;
+  font-weight: 400;
+  font-size: 5rem;
   margin-bottom: 30px;
-  font-style: italic;
-  font-family: "Cormorant Garamond", serif;
 }
 
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -637,7 +636,6 @@ footer > div #running-icon a:visited {
   }
 }
 #quote1 p {
-  font-family: "Averia Libre", cursive;
   font-weight: 300;
   font-size: 1.875rem;
   grid-area: p;

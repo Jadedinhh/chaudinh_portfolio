@@ -5,22 +5,20 @@ body{
     // background-color: black;
 
     .number{
-        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Averia Libre', cursive;
         font-style: italic;
-        font-weight: 500;
-        font-size: rem-calc(120);
-        // margin-bottom: 15px;
+        font-weight: 400;
+        font-size: rem-calc(80);
+        margin: 15px 0;
     }
 
 
     .categories{
-        font-weight: 300;
-        font-size: rem-calc(60);
+        font-weight: 400;
+        font-size: rem-calc(80);
         margin-bottom: 30px;
-        font-style: italic;
-        // font-family: 'Lexend Deca', sans-serif;
-        // font-family: 'Averia Libre', cursive;
-        font-family: 'Cormorant Garamond', serif;
+        // font-style: italic;
+       
         
     }
 }
