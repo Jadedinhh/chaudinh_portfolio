@@ -1,5 +1,16 @@
 #hero{
-    margin-top: -170px;
+    margin-top: -250px;
+
+    @include md{
+        margin-top: -270px;
+
+    }
+
+    @include xl{
+        margin-top: -230px;
+
+    }
+    
 
     
     >div{
@@ -17,7 +28,7 @@
 
 
     #hero-content{
-        color: $neon-orange;
+        color: $blood-orange;
         font-weight: 700;
         font-size: rem-calc(30);
         text-align: center;

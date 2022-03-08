@@ -415,7 +415,7 @@ figure {
 }
 #nav-container ul li a:link,
 #nav-container ul li a:visited {
-  color: #D5782A;
+  color: #EF4136;
   font-size: 1.125rem;
   font-weight: 400;
   transition: 0.25s;
@@ -455,7 +455,24 @@ header > div {
 }
 header > div #logo-container {
   grid-area: logo;
+  margin-top: 0;
   margin-bottom: 15px;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  header > div #logo-container {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  header > div #logo-container {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  header > div #logo-container {
+    width: 35%;
+  }
 }
 header > div #burger-container {
   cursor: pointer;
@@ -491,7 +508,17 @@ header > div #nav-container {
     Footer
 ============= */
 #hero {
-  margin-top: -170px;
+  margin-top: -250px;
+}
+@media (min-width: 768px) {
+  #hero {
+    margin-top: -270px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    margin-top: -230px;
+  }
 }
 #hero > div {
   background-image: url("../img/m&m/mai.png");
@@ -504,7 +531,7 @@ header > div #nav-container {
   align-items: center;
 }
 #hero > div #hero-content {
-  color: #FE812F;
+  color: #EF4136;
   font-weight: 700;
   font-size: 1.875rem;
   text-align: center;
