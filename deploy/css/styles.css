@@ -464,6 +464,7 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  top: 0;
 }
 @media (min-width: 1024px) {
   header {
@@ -548,6 +549,16 @@ footer {
   grid-template-areas: ". footer .";
   background-image: linear-gradient(black, #D5782A);
 }
+@media (min-width: 1024px) {
+  footer {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 1400px auto;
+  }
+}
 footer > div {
   grid-area: footer;
 }
@@ -559,13 +570,13 @@ footer > div #icon2 {
 footer > div #icon2 h5 {
   margin-left: 15px;
 }
-footer > div h1 {
+footer > div #running-icon h1 {
   margin-bottom: 15px;
   font-weight: 300;
   font-size: 3.125rem;
   color: #fff;
 }
-footer > div h1:hover {
+footer > div #running-icon h1:hover {
   color: #FE812F;
 }
 footer > div #running-icon a:link,
@@ -611,14 +622,13 @@ footer > div #running-icon a:visited {
 }
 #hero > div #hero-content {
   color: #EF4136;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.875rem;
   text-align: center;
   margin: 0 16px;
   font-family: "Averia Libre", cursive;
 }
 #hero > div #hero-content p {
-  display: block;
   margin-bottom: 15px;
 }
 #hero > div #hero-content p span {
@@ -661,6 +671,12 @@ footer > div #running-icon a:visited {
 @media (min-width: 1024px) {
   #quote1 {
     padding-bottom: 74px;
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #quote1 {
+    grid-template-columns: auto 1400px auto;
   }
 }
 #quote1 > div {
@@ -668,6 +684,7 @@ footer > div #running-icon a:visited {
 }
 #quote1 > div #icon {
   display: flex;
+  align-items: center;
   font-size: 1.25rem;
 }
 #quote1 > div #icon h5 {
@@ -806,6 +823,18 @@ footer > div #running-icon a:visited {
 }
 #univers > div #u-content {
   color: white;
+}
+
+#tattoos-opening {
+  background-color: black;
+  color: white;
+  padding: 64px 0;
+  font-family: "Averia Libre", cursive;
+  font-weight: 300;
+  font-size: 5rem;
+}
+#tattoos-opening p span {
+  font-style: italic;
 }
 
 #photography > div #p-image {

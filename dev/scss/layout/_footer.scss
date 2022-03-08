@@ -8,6 +8,16 @@ footer{
      grid-template-areas: ". footer .";
      background-image: linear-gradient(black, $burnt-orange);
 
+
+     @include lg {
+        grid-template-columns: auto 1000px auto;
+    }
+
+    
+    @include xl {
+        grid-template-columns: auto 1400px auto;
+    }
+
      >div{
          grid-area: footer;
 
@@ -21,7 +31,11 @@ footer{
              }
          }
 
-         h1{
+        
+
+         #running-icon{ 
+             
+            h1{
              margin-bottom: 15px;
             font-weight: 300;
             //  font-family: 'Cormorant Garamond', serif;
@@ -34,7 +48,7 @@ footer{
              }
          }
 
-         #running-icon{
+
             a:link,
             a:visited {
                 color: $neon-orange;
