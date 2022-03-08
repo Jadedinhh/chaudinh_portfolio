@@ -10,12 +10,12 @@
     >div {
         grid-area: wabisabi;
 
-        @include md{
-            display: grid;
-            grid-template-columns: repeat(2, 1 rl);
-            grid-template-areas: "wabisabi-image  ."
-                                 "wabisabi-image  wabisabi-content";
-        }
+        // @include md{
+        //     display: grid;
+        //     grid-template-columns: repeat(2, 1 rl);
+        //     grid-template-areas: "wabisabi-image  ."
+        //                          "wabisabi-image  wabisabi-content";
+        // }
 
         #wabisabi-image {
             background-image: url("../img/wabisabi/wabisabi1.png");

@@ -358,11 +358,13 @@ body .number {
   font-weight: 400;
   font-size: 5rem;
   margin: 15px 0;
+  color: #DBDAD6;
 }
 body .categories {
   font-weight: 400;
   font-size: 5rem;
   margin-bottom: 30px;
+  color: white;
 }
 
 /* =============
@@ -613,13 +615,12 @@ footer > div #running-icon a:visited {
 }
 #about > div #about-content {
   color: white;
-  text-align: center;
+  text-align: left;
 }
 #about > div #about-content h1 {
   margin-bottom: 15px;
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-size: 2.5rem;
+  font-family: "Averia Libre", cursive;
+  font-size: 3.125rem;
 }
 
 #quote1 {
@@ -628,17 +629,27 @@ footer > div #running-icon a:visited {
   text-align: left;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". p .";
+  grid-template-areas: ". quote1 . ";
 }
 @media (min-width: 1024px) {
   #quote1 {
     padding-bottom: 74px;
   }
 }
-#quote1 p {
-  font-weight: 300;
-  font-size: 1.875rem;
-  grid-area: p;
+#quote1 > div {
+  grid-area: quote1;
+}
+#quote1 > div #icon {
+  display: flex;
+  font-size: 1.25rem;
+}
+#quote1 > div #icon h5 {
+  margin-left: 15px;
+}
+#quote1 > div p {
+  font-weight: 400;
+  font-size: 4.375rem;
+  line-height: 1.5;
 }
 
 #hanoi {
@@ -647,7 +658,6 @@ footer > div #running-icon a:visited {
   grid-template-areas: ". hanoi .";
   background-color: #000;
   padding: 64px 0;
-  color: white;
 }
 @media (min-width: 768px) {
   #hanoi {
@@ -657,34 +667,14 @@ footer > div #running-icon a:visited {
 #hanoi > div {
   grid-area: hanoi;
 }
-@media (min-width: 768px) {
-  #hanoi > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: ". hanoi-image" "hanoi-content hanoi-image";
-  }
-}
 #hanoi > div #hanoi-content {
-  color: white;
   margin-bottom: 15px;
-}
-@media (min-width: 768px) {
-  #hanoi > div #hanoi-content {
-    grid-area: hanoi-content;
-    justify-content: right;
-  }
 }
 #hanoi > div #hanoi-image {
   background-image: url("../img/hanoi_poster/hanoi-poster.png");
   background-position: cover;
   background-size: cover;
   height: 680px;
-}
-@media (min-width: 768px) {
-  #hanoi > div #hanoi-image {
-    grid-area: hanoi-image;
-    height: 781px;
-  }
 }
 
 #wabisabi {
@@ -697,13 +687,6 @@ footer > div #running-icon a:visited {
 }
 #wabisabi > div {
   grid-area: wabisabi;
-}
-@media (min-width: 768px) {
-  #wabisabi > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1 rl);
-    grid-template-areas: "wabisabi-image  ." "wabisabi-image  wabisabi-content";
-  }
 }
 #wabisabi > div #wabisabi-image {
   background-image: url("../img/wabisabi/wabisabi1.png");

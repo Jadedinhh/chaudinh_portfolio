@@ -6,7 +6,7 @@
     background-color: $black;
     padding: 64px 0;
 
-    color: white;
+    // color: white;
 
     @include md{
         grid-template-columns: 32px auto 32px;
@@ -15,22 +15,22 @@
      >div{
          grid-area: hanoi;
          
-         @include md{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              grid-template-areas: ". hanoi-image"
-                                   "hanoi-content hanoi-image";
-         }
+        //  @include md{
+        //       display: grid;
+        //       grid-template-columns: repeat(2,1fr);
+        //       grid-template-areas: ". hanoi-image"
+        //                            "hanoi-content hanoi-image";
+        //  }
 
          #hanoi-content{
-             color: white;
+            //  color: white;
              margin-bottom: 15px;
 
-             @include md{
-                 grid-area: hanoi-content;
-                justify-content: right;
+            //  @include md{
+            //      grid-area: hanoi-content;
+            //     justify-content: right;
                  
-             }
+            //  }
          }
 
          #hanoi-image{
@@ -39,10 +39,10 @@
              background-size: cover;
              height: 680px;
 
-             @include md{
-                 grid-area: hanoi-image;
-                 height: 781px;
-             }
+            //  @include md{
+            //      grid-area: hanoi-image;
+            //      height: 781px;
+            //  }
 
          }
      }
