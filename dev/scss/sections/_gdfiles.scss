@@ -19,6 +19,13 @@
    >div {
       grid-area: gdfiles;
 
+      grid-template-areas: "f1"
+      "f2"
+      "f3"
+      "f4"
+      "f5"
+      "f6";
+
   @include lg{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -37,6 +44,17 @@
                
             }
          }
+         
+         #f1{
+         grid-area: f1;
+      }
+      #f3{
+         grid-area: f3;
+      }
+      #f5{
+         grid-area: f5;
+      }
+
       }
 
       #list-right{
@@ -47,58 +65,28 @@
             li{
                padding-bottom: 64px;
             }
-         }
+         } 
+         
+         #f2{
+         grid-area: f2;
       }
-      // ul {
+      #f4{
+         grid-area: f4;
+      }
+       #f6{
+         grid-area: f6;
+      }
 
-      //    // @include md {
-      //    //    gap: 30px;
-      //    //    display: grid;
-      //    //    grid-template-columns: repeat(2, 1fr);
-      //    //    grid-template-areas: "f1 f2"
-      //    //    "f3 f4"
-      //    //    "f5 f6";
-      //    // }
+      }
+      
+      
 
-      //    li {
-      //       //  padding-bottom: 64px;
+     
 
-      //       #f1 {
-      //          @include md {
-      //             grid-area: f1;
-      //          }
-      //       }
+      
 
-      //       #f2 {
-      //          @include md {
-      //             grid-area: f2;
-      //          }
-      //       }
-
-      //       #f3 {
-      //          @include md {
-      //             grid-area: f3;
-      //          }
-      //       }
-
-      //       #f4 {
-      //          @include md {
-      //             grid-area: f4;
-      //          }
-      //       }
-
-      //       #f5 {
-      //          @include md {
-      //             grid-area: f5;
-      //          }
-      //       }
-
-      //       #f6 {
-      //          @include md {
-      //             grid-area: f6;
-      //          }
-      //       }
-      //    }
-      // }
+      
+      
+     
    }
 }
