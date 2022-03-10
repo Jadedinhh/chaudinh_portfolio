@@ -547,7 +547,7 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-image: linear-gradient(#005445, #F36C00);
+  background-image: linear-gradient(-45deg, #005445, #D10000);
 }
 @media (min-width: 1024px) {
   footer {
@@ -570,31 +570,59 @@ footer > div #icon2 {
 footer > div #icon2 h5 {
   margin-left: 15px;
 }
-footer > div #running-icon h1 {
-  margin-bottom: 15px;
+footer > div #running-icon > div {
+  margin-bottom: 50px;
+}
+footer > div #running-icon > div h1 {
+  margin: 50px 0;
   font-weight: 300;
   font-size: 3.125rem;
   color: #fff;
 }
-footer > div #running-icon h1:hover {
+footer > div #running-icon > div h1:hover {
   color: #FE812F;
 }
-footer > div #running-icon a:link,
-footer > div #running-icon a:visited {
+footer > div #running-icon > div p {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
   color: #FE812F;
-  font-size: 1.125rem;
+}
+footer > div #running-icon > div a:link,
+footer > div #running-icon > div a:visited {
+  color: #fff;
+  font-size: 1.5625rem;
   font-weight: 300;
   transition: 0.25s;
 }
-footer > div #running-icon a:link:hover,
-footer > div #running-icon a:visited:hover {
-  color: white;
+footer > div #running-icon > div a:link:hover,
+footer > div #running-icon > div a:visited:hover {
+  color: #1CC196;
 }
 @media (min-width: 1024px) {
-  footer > div #running-icon a:link,
-footer > div #running-icon a:visited {
+  footer > div #running-icon > div a:link,
+footer > div #running-icon > div a:visited {
     font-size: 1.25rem;
   }
+}
+footer > div #follow > div h1 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  color: #FE812F;
+  font-weight: 300;
+}
+footer > div #follow > div a:link,
+footer > div #follow > div a:visited {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  transition: 0.25s;
+}
+footer > div #follow > div a:link:hover,
+footer > div #follow > div a:visited:hover {
+  color: #005445;
+}
+footer > div #follow > div .socialslink {
+  margin-bottom: 15px;
 }
 
 #hero {
@@ -602,7 +630,7 @@ footer > div #running-icon a:visited {
 }
 @media (min-width: 768px) {
   #hero {
-    margin-top: -270px;
+    margin-top: -300px;
   }
 }
 @media (min-width: 1200px) {
@@ -662,6 +690,7 @@ footer > div #running-icon a:visited {
 
 #quote1 {
   background-color: black;
+  padding-top: 64px;
   color: white;
   text-align: left;
   display: grid;
@@ -826,7 +855,7 @@ footer > div #running-icon a:visited {
 }
 
 #tattoos-opening {
-  background-image: linear-gradient(#000, #005445);
+  background-color: #000;
   color: white;
   padding: 64px 0;
   font-family: "Averia Libre", cursive;

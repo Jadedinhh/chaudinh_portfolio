@@ -2,7 +2,7 @@
     margin-top: -250px;
 
     @include md{
-        margin-top: -270px;
+        margin-top: -300px;
 
     }
 
@@ -15,7 +15,6 @@
     
     >div{
     background-image: url("../img/m&m/mai.png");
-    // background-image: linear-gradient($burnt-orange, black);
     background-position: center;
     background-size: cover;
     height: 100vh;
