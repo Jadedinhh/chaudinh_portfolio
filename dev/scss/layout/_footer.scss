@@ -6,7 +6,7 @@ footer{
      display:  grid;
      grid-template-columns: 16px auto 16px;
      grid-template-areas: ". footer .";
-     background-image: linear-gradient(black, $burnt-orange);
+     background-image: linear-gradient($jade, $retro-orange);
 
 
      @include lg {
