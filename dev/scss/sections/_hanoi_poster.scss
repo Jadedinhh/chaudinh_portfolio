@@ -19,7 +19,13 @@
              height: 680px;
 
              @include lg{
-                 height: 500px;
+                 height: 480px;
+                 margin-top: 80px;
+
+             }
+
+             @include xl{
+                 height: 680px;
              }
 
            

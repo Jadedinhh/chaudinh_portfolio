@@ -19,6 +19,10 @@
     @include lg{
         height: 480px;
     }
+
+    @include xl{
+height: 680px;
+    }
     }
 
     #u-content{

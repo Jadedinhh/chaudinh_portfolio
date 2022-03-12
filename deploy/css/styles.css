@@ -749,7 +749,8 @@ header > div #nav-container {
   #gdfiles > div ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". f6 .";
+    grid-template-areas: "f1 . ." ". f2 ." ". . f3" "f4 . ." ". f5 ." ". . f6";
+    gap: 15px;
   }
 }
 #gdfiles > div ul li {
@@ -790,7 +791,13 @@ header > div #nav-container {
 }
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
-    height: 500px;
+    height: 480px;
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  #hanoi > div #hanoi-image {
+    height: 680px;
   }
 }
 
@@ -813,6 +820,11 @@ header > div #nav-container {
     height: 430px;
   }
 }
+@media (min-width: 1200px) {
+  #wabisabi > div #wabisabi-image {
+    height: 605px;
+  }
+}
 #wabisabi > div #wabisabi-content {
   grid-area: wabisabi-content;
 }
@@ -827,6 +839,12 @@ header > div #nav-container {
   #morean > div #morean-image {
     height: 410px;
     background-position: -60px center;
+  }
+}
+@media (min-width: 1200px) {
+  #morean > div #morean-image {
+    height: 600px;
+    background-position: -90px center;
   }
 }
 #morean > div #morean-content {
@@ -844,6 +862,11 @@ header > div #nav-container {
     height: 420px;
   }
 }
+@media (min-width: 1200px) {
+  #jeanne > div #jeanne-image {
+    height: 600px;
+  }
+}
 #jeanne > div #jeanne-content {
   color: white;
 }
@@ -857,6 +880,11 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #univers > div #u-image {
     height: 480px;
+  }
+}
+@media (min-width: 1200px) {
+  #univers > div #u-image {
+    height: 680px;
   }
 }
 #univers > div #u-content {
@@ -884,5 +912,10 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #photography > div #p-image {
     height: 460px;
+  }
+}
+@media (min-width: 1200px) {
+  #photography > div #p-image {
+    height: 670px;
   }
 }

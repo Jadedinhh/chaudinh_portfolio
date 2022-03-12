@@ -20,6 +20,10 @@
                 height: 420px;
             }
 
+            @include xl{
+                height: 600px;
+            }
+
         }
 
         #jeanne-content {

@@ -20,6 +20,10 @@
                 height: 430px;
             }
 
+            @include xl{
+                height: 605px;
+            }
+
         }
 
         #wabisabi-content {
