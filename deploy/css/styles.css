@@ -744,50 +744,36 @@ header > div #nav-container {
 }
 #gdfiles > div {
   grid-area: gdfiles;
-  grid-template-areas: "f1" "f2" "f3" "f4" "f5" "f6";
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li {
+    padding-bottom: 64px;
+  }
 }
 @media (min-width: 1024px) {
-  #gdfiles > div {
+  #gdfiles > div ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "list-left list-right";
-    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". . f6";
+    gap: 15px;
   }
 }
-@media (min-width: 768px) {
-  #gdfiles > div #list-left {
-    grid-area: list-left;
-    display: block;
-  }
-  #gdfiles > div #list-left li {
-    padding-bottom: 64px;
-  }
-}
-#gdfiles > div #list-left #f1 {
+#gdfiles > div ul #f1 {
   grid-area: f1;
 }
-#gdfiles > div #list-left #f3 {
-  grid-area: f3;
-}
-#gdfiles > div #list-left #f5 {
-  grid-area: f5;
-}
-@media (min-width: 768px) {
-  #gdfiles > div #list-right {
-    margin-top: 200px;
-    grid-area: list-right;
-  }
-  #gdfiles > div #list-right li {
-    padding-bottom: 64px;
-  }
-}
-#gdfiles > div #list-right #f2 {
+#gdfiles > div ul #f2 {
   grid-area: f2;
 }
-#gdfiles > div #list-right #f4 {
+#gdfiles > div ul #f3 {
+  grid-area: f3;
+}
+#gdfiles > div ul #f5 {
+  grid-area: f5;
+}
+#gdfiles > div ul #f4 {
   grid-area: f4;
 }
-#gdfiles > div #list-right #f6 {
+#gdfiles > div ul #f6 {
   grid-area: f6;
 }
 
