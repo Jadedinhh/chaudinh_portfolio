@@ -1,18 +1,18 @@
 #morean{
-    // padding: 64px 0;
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". morean .";
-    // background-color: black;
 
     >div{
-        // grid-area: morean;
+      
 
         #morean-image{
             background-image: url("../img/morean/MoreanB.jpg");
             background-size: cover;
             background-position: -90px center;
             height: 600px;
+
+            @include lg{
+                height: 410px;
+                background-position:  -50px center;
+            }
         }
 
         #morean-content{

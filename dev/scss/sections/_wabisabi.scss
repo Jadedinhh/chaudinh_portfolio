@@ -15,6 +15,11 @@
          @include md{
              grid-area: wabisabi-image;
          }
+
+         @include lg{
+height: 430px;
+         }
+         
         }
 
         #wabisabi-content {

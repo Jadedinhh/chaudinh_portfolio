@@ -6,9 +6,9 @@
 
    padding-top: 64px;
 
-   @include lg {
-      grid-template-columns: auto 800px auto;
-   }
+   // @include lg {
+   //    grid-template-columns: auto 800px auto;
+   // }
 
 
    @include xl {

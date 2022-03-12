@@ -16,6 +16,10 @@
             background-position: center;
             height: 600px;
 
+            @include lg{
+                height: 440px;
+            }
+
         }
 
         #jeanne-content {

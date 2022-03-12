@@ -732,11 +732,6 @@ header > div #nav-container {
   background-color: #000;
   padding-top: 64px;
 }
-@media (min-width: 1024px) {
-  #gdfiles {
-    grid-template-columns: auto 800px auto;
-  }
-}
 @media (min-width: 1200px) {
   #gdfiles {
     grid-template-columns: auto 1200px auto;
@@ -806,6 +801,11 @@ header > div #nav-container {
     grid-area: wabisabi-image;
   }
 }
+@media (min-width: 1024px) {
+  #wabisabi > div #wabisabi-image {
+    height: 430px;
+  }
+}
 #wabisabi > div #wabisabi-content {
   grid-area: wabisabi-content;
 }
@@ -816,6 +816,12 @@ header > div #nav-container {
   background-position: -90px center;
   height: 600px;
 }
+@media (min-width: 1024px) {
+  #morean > div #morean-image {
+    height: 410px;
+    background-position: -50px center;
+  }
+}
 #morean > div #morean-content {
   color: white;
 }
@@ -825,6 +831,11 @@ header > div #nav-container {
   background-size: cover;
   background-position: center;
   height: 600px;
+}
+@media (min-width: 1024px) {
+  #jeanne > div #jeanne-image {
+    height: 440px;
+  }
 }
 #jeanne > div #jeanne-content {
   color: white;
