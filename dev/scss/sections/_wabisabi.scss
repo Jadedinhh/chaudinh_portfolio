@@ -4,7 +4,7 @@
     color: white;
 
     >div {
-       
+
 
         #wabisabi-image {
             background-image: url("../img/wabisabi/wabisabi1.png");
@@ -12,14 +12,14 @@
             background-position: center;
             height: 590px;
 
-         @include md{
-             grid-area: wabisabi-image;
-         }
+            @include md {
+                grid-area: wabisabi-image;
+            }
 
-         @include lg{
-height: 430px;
-         }
-         
+            @include lg {
+                height: 430px;
+            }
+
         }
 
         #wabisabi-content {
