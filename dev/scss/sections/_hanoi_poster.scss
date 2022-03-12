@@ -14,9 +14,13 @@
 
          #hanoi-image{
              background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
-             background-position: cover;
+             background-position: center;
              background-size: cover;
              height: 680px;
+
+             @include lg{
+                 height: 500px;
+             }
 
            
 

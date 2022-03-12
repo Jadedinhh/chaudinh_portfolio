@@ -732,26 +732,28 @@ header > div #nav-container {
   background-color: #000;
   padding-top: 64px;
 }
+@media (min-width: 1024px) {
+  #gdfiles {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 @media (min-width: 1200px) {
   #gdfiles {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1400px auto;
   }
 }
 #gdfiles > div {
   grid-area: gdfiles;
 }
-@media (min-width: 768px) {
-  #gdfiles > div ul li {
-    padding-bottom: 64px;
-  }
-}
 @media (min-width: 1024px) {
   #gdfiles > div ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". . f6";
-    gap: 15px;
+    grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". f6 .";
   }
+}
+#gdfiles > div ul li {
+  padding-bottom: 64px;
 }
 #gdfiles > div ul #f1 {
   grid-area: f1;
@@ -782,9 +784,14 @@ header > div #nav-container {
 }
 #hanoi > div #hanoi-image {
   background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
-  background-position: cover;
+  background-position: center;
   background-size: cover;
   height: 680px;
+}
+@media (min-width: 1024px) {
+  #hanoi > div #hanoi-image {
+    height: 500px;
+  }
 }
 
 #wabisabi {
@@ -819,7 +826,7 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #morean > div #morean-image {
     height: 410px;
-    background-position: -50px center;
+    background-position: -60px center;
   }
 }
 #morean > div #morean-content {
@@ -834,7 +841,7 @@ header > div #nav-container {
 }
 @media (min-width: 1024px) {
   #jeanne > div #jeanne-image {
-    height: 440px;
+    height: 420px;
   }
 }
 #jeanne > div #jeanne-content {
@@ -846,6 +853,11 @@ header > div #nav-container {
   background-size: cover;
   background-position: center;
   height: 700px;
+}
+@media (min-width: 1024px) {
+  #univers > div #u-image {
+    height: 480px;
+  }
 }
 #univers > div #u-content {
   color: white;
@@ -868,4 +880,9 @@ header > div #nav-container {
   background-position: cover;
   background-size: cover;
   height: 680px;
+}
+@media (min-width: 1024px) {
+  #photography > div #p-image {
+    height: 460px;
+  }
 }
