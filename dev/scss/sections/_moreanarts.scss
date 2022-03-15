@@ -9,6 +9,10 @@
             background-position: -90px center;
             height: 600px;
 
+            @include md{
+                height: 590px;
+            }
+
             @include lg{
                 height: 410px;
                 background-position:  -60px center;

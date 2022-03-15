@@ -762,7 +762,7 @@ header > div #nav-container {
   }
 }
 #gdfiles > div ul li {
-  padding-bottom: 0px;
+  padding-bottom: 64px;
 }
 #gdfiles > div ul #f1 {
   grid-area: f1;
@@ -842,6 +842,11 @@ header > div #nav-container {
   background-position: -90px center;
   height: 600px;
 }
+@media (min-width: 768px) {
+  #morean > div #morean-image {
+    height: 590px;
+  }
+}
 @media (min-width: 1024px) {
   #morean > div #morean-image {
     height: 410px;
@@ -863,6 +868,12 @@ header > div #nav-container {
   background-size: cover;
   background-position: center;
   height: 600px;
+}
+@media (min-width: 768px) {
+  #jeanne > div #jeanne-image {
+    height: 680px;
+    background-position: -20px;
+  }
 }
 @media (min-width: 1024px) {
   #jeanne > div #jeanne-image {
@@ -915,6 +926,11 @@ header > div #nav-container {
   background-position: cover;
   background-size: cover;
   height: 680px;
+}
+@media (min-width: 768px) {
+  #photography > div #p-image {
+    height: 700px;
+  }
 }
 @media (min-width: 1024px) {
   #photography > div #p-image {

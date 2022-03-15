@@ -9,6 +9,11 @@
          background-size: cover;
          height: 680px;
 
+
+         @include md{
+             height: 700px;
+         }
+
          @include lg{
              height: 460px;
          }

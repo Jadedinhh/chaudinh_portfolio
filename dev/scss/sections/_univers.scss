@@ -1,32 +1,25 @@
-#univers{
-    // padding: 64px 0;
-
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". univers.";
-    // background-color: black;
-
->div{
-    // grid-area: univers;
-
-    #u-image{
-        background-image: url("../img/univers/univers1.png");
-        background-size: cover;
-        background-position: center;
-        height: 700px;
+#univers {
+  
+    >div {
+     
+        #u-image {
+            background-image: url("../img/univers/univers1.png");
+            background-size: cover;
+            background-position: center;
+            height: 700px;
 
 
-    @include lg{
-        height: 480px;
+            @include lg {
+                height: 480px;
+            }
+
+            @include xl {
+                height: 680px;
+            }
+        }
+
+        #u-content {
+            color: white;
+        }
     }
-
-    @include xl{
-height: 680px;
-    }
-    }
-
-    #u-content{
-        color: white;
-    }
-}
 }

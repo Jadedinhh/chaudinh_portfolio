@@ -1,20 +1,20 @@
 #jeanne {
-    // padding: 64px 0;
-
-
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". jeanne .";
-    // background-color: black;
+ 
 
     >div {
-        // grid-area: jeanne;
+       
 
         #jeanne-image {
             background-image: url("../img/jeanne-gang/jeanne.png");
             background-size: cover;
             background-position: center;
             height: 600px;
+
+
+            @include md{
+                height: 680px;
+                background-position: -20px;
+            }
 
             @include lg{
                 height: 420px;
