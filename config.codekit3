@@ -228,8 +228,16 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/about.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/about_content.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/about.html",
+      "oAP" : "\/dev\/content\/about_content.html",
       "oF" : 0
     },
     "\/dev\/content\/gdfiles.kit" : {
@@ -521,7 +529,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_about.scss" : {
+    "\/dev\/scss\/sections\/_about_content.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
