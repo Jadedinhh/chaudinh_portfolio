@@ -729,8 +729,8 @@ header > div #nav-container {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". gdfiles .";
-  background-color: #000;
-  padding-top: 64px;
+  background-color: black;
+  padding: 64px 0;
 }
 @media (min-width: 1024px) {
   #gdfiles {
@@ -757,12 +757,17 @@ header > div #nav-container {
   #gdfiles > div ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f1 . ." ". f2 ." ". . f3" "f4 . ." ". f5 ." ". . f6";
+    grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". . f6";
     gap: 15px;
   }
 }
 #gdfiles > div ul li {
   padding-bottom: 64px;
+}
+@media (min-width: 1024px) {
+  #gdfiles > div ul li {
+    padding-bottom: 0px;
+  }
 }
 #gdfiles > div ul #f1 {
   grid-area: f1;
@@ -878,6 +883,7 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #jeanne > div #jeanne-image {
     height: 420px;
+    background-position: center;
   }
 }
 @media (min-width: 1200px) {
