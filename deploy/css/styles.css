@@ -547,7 +547,7 @@ header > div #nav-container {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-image: linear-gradient(-45deg, #005445, #D10000);
+  background-image: linear-gradient(-45deg, black, #005445, #D10000);
 }
 @media (min-width: 1024px) {
   #footer {
@@ -745,6 +745,14 @@ header > div #nav-container {
 #gdfiles > div {
   grid-area: gdfiles;
 }
+@media (min-width: 768px) {
+  #gdfiles > div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f3 f4" "f5 f6";
+    gap: 25px;
+  }
+}
 @media (min-width: 1024px) {
   #gdfiles > div ul {
     display: grid;
@@ -754,7 +762,7 @@ header > div #nav-container {
   }
 }
 #gdfiles > div ul li {
-  padding-bottom: 64px;
+  padding-bottom: 0px;
 }
 #gdfiles > div ul #f1 {
   grid-area: f1;
@@ -792,7 +800,6 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
     height: 480px;
-    margin-top: 80px;
   }
 }
 @media (min-width: 1200px) {
