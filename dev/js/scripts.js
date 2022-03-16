@@ -5,14 +5,14 @@ window.addEventListener('load', function() {
     // console.log(projects[0].title);
 
     // populate the hero images
-    let heroImgArray = document.querySelectorAll('#t-gallery li');
+    let tattooImgArray = document.querySelectorAll('#t-gallery li');
     // iterate over the heroImgArray and populate the background images
-    heroImgArray.forEach((heroImg, i) => {
+    tattooImgArray.forEach((tattooImg, i) => {
 
         // first pass in the array
         // heroImg.style.backgroundImage = "url(./img/projects/turtles/turtle-1.jpg)";
 
-        heroImg.style.backgroundImage = "url(" + tattoos[i].images[0] + ")";
+        tattooImg.style.backgroundImage = "url(" + tattoos[i].images[0] + ")";
 
     });
 
