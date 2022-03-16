@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/deploy\/about.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/about.html",
-      "oF" : 0
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -366,14 +358,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/dev\/about.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/about.html",
-      "oF" : 2
     },
     "\/dev\/content\/about_content.kit" : {
       "cB" : 0,

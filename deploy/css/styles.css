@@ -834,7 +834,7 @@ header > div #nav-container {
 }
 @media (min-width: 1200px) {
   #wabisabi > div #wabisabi-image {
-    height: 605px;
+    height: 600px;
   }
 }
 #wabisabi > div #wabisabi-content {
@@ -932,7 +932,7 @@ header > div #nav-container {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". tattoos .";
   background-color: black;
-  padding: 64px 0;
+  padding-bottom: 64px;
 }
 @media (min-width: 1024px) {
   #tattoos {
@@ -951,13 +951,20 @@ header > div #nav-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "t1 t2 t3" "t4 t5 t6" "t7 t8 t9" "t10 t11 t12";
-  gap: 15px;
-  height: 60vh;
+  gap: 5px;
+  height: 70vh;
 }
 @media (min-width: 1024px) {
   #tattoos > div #t-gallery ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "t1 t2 t3 t4" "t5 t6 t7 t8" "t9 t10 t11 t12";
+    height: 90vh;
+    gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #tattoos > div #t-gallery ul {
+    height: 120vh;
   }
 }
 #tattoos > div #t-gallery ul li {
