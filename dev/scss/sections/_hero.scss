@@ -14,7 +14,7 @@
 
     
     >div{
-    background-image: url("../img/m&m/mai.png");
+    background-image: linear-gradient($grey, $grey), url("../img/m&m/mai.png");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -27,8 +27,8 @@
      
 
     #hero-content{
-        color: $blood-orange;
-        font-weight: 300;
+        color: $cam;
+        font-weight: 400;
         font-size: rem-calc(30);
         text-align: center;
         margin: 0 16px;
@@ -42,9 +42,15 @@
 
          span{
              font-style: italic;
-            //  font-weight: 500;
-           
+
          }
+     }
+
+     p1{
+        span{
+            font-style: italic;
+          
+        }
      }
 
      

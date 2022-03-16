@@ -639,7 +639,7 @@ header > div #nav-container {
   }
 }
 #hero > div {
-  background-image: url("../img/m&m/mai.png");
+  background-image: linear-gradient(rgba(6, 51, 21, 0.24), rgba(6, 51, 21, 0.24)), url("../img/m&m/mai.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -650,7 +650,7 @@ header > div #nav-container {
 }
 #hero > div #hero-content {
   color: #EF4136;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.875rem;
   text-align: center;
   margin: 0 16px;
@@ -660,6 +660,9 @@ header > div #nav-container {
   margin-bottom: 15px;
 }
 #hero > div #hero-content p span {
+  font-style: italic;
+}
+#hero > div #hero-content p1 span {
   font-style: italic;
 }
 
@@ -691,12 +694,12 @@ header > div #nav-container {
 #about > div #about-content h1 {
   margin-bottom: 15px;
   font-family: "Averia Libre", cursive;
-  font-size: 2.5rem;
+  font-size: 2.1875rem;
   font-weight: 300;
   color: #EF4136;
 }
 #about > div #about-content p {
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
