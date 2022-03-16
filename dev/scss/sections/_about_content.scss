@@ -7,9 +7,19 @@
     grid-template-areas: ". header .";
 
 
-    @include lg{
-        padding: 74px 0;
-    }
+
+   @include lg {
+    grid-template-columns: auto 1000px auto;
+    padding: 74px 0;
+ }
+
+
+ @include xl {
+    grid-template-columns: auto 1400px auto;
+ }
+
+
+   
 
     >div{
       grid-area: header;
@@ -17,11 +27,19 @@
         #about-content{
             color: white;
             text-align: left;
+
             h1{
                 margin-bottom: 15px;
                 font-family: 'Averia Libre', cursive;
                 // font-style: italic;
-                font-size: rem-calc(50);
+                font-size: rem-calc(40);
+                font-weight: 300;
+                color: $blood-orange;
+            }
+
+            p{
+                font-size: rem-calc(40);
+                font-weight: 300;
             }
         }
     }
