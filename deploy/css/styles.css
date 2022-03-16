@@ -626,7 +626,7 @@ header > div #nav-container {
 }
 
 #hero {
-  margin-top: -250px;
+  margin-top: -240px;
 }
 @media (min-width: 768px) {
   #hero {
