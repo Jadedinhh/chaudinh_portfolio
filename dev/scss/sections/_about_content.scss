@@ -6,27 +6,76 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
 
-
+   @include md{
+       grid-template-columns: auto 700px auto; 
+        padding: 74px 0;
+   }
 
    @include lg {
-    grid-template-columns: auto 1000px auto;
-    padding: 74px 0;
+    grid-template-columns: auto 800px auto;
+    padding: 100px 0;
+  
  }
 
 
  @include xl {
-    grid-template-columns: auto 1400px auto;
+    grid-template-columns: auto 1000px auto;
  }
 
 
    
 
     >div{
-      grid-area: header;
+      grid-area: header; 
+
+      
+
+      @include md{
+           display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "photo content"
+     ;
+
+    
+      
+      }
+     
+      
+      
+      #about-photo{
+           
+           grid-area: photo;
+
+           @include md{
+               background-image: url("../img/logo/logo2.svg");
+               background-position: center;
+               background-size: cover;
+               height: 220px;
+               width: 250px;
+               
+               align-items: right;
+           }
+      
+
+           img{
+              width: 30%; 
+
+              @include md{
+                  width: 60%;
+                  display: none;
+                  
+              }
+           }
+
+          
+         
+        }
         
         #about-content{
             color: white;
             text-align: left;
+            grid-area: content;
+            // margin-top: -40px;
 
             h1{
                 margin-bottom: 15px;
@@ -35,6 +84,7 @@
                 font-size: rem-calc(35);
                 font-weight: 300;
                 color: $cam;
+           
             }
 
             p{
@@ -42,6 +92,8 @@
                 font-weight: 300;
             }
         }
+
+        
     }
     }
     

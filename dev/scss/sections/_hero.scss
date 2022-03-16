@@ -24,7 +24,9 @@
     justify-content: center;
     align-items: center;
  
-     
+     @include md{
+         height: 110vh;
+     }
 
     #hero-content{
         color: $cam;

@@ -648,6 +648,11 @@ header > div #nav-container {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  #hero > div {
+    height: 110vh;
+  }
+}
 #hero > div #hero-content {
   color: #EF4136;
   font-weight: 400;
@@ -673,23 +678,59 @@ header > div #nav-container {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
 }
+@media (min-width: 768px) {
+  #about {
+    grid-template-columns: auto 700px auto;
+    padding: 74px 0;
+  }
+}
 @media (min-width: 1024px) {
   #about {
-    grid-template-columns: auto 1000px auto;
-    padding: 74px 0;
+    grid-template-columns: auto 800px auto;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1200px) {
   #about {
-    grid-template-columns: auto 1400px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #about > div {
   grid-area: header;
 }
+@media (min-width: 768px) {
+  #about > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "photo content";
+  }
+}
+#about > div #about-photo {
+  grid-area: photo;
+}
+@media (min-width: 768px) {
+  #about > div #about-photo {
+    background-image: url("../img/logo/logo2.svg");
+    background-position: center;
+    background-size: cover;
+    height: 220px;
+    width: 250px;
+    align-items: right;
+  }
+}
+#about > div #about-photo img {
+  width: 30%;
+}
+@media (min-width: 768px) {
+  #about > div #about-photo img {
+    width: 60%;
+    display: none;
+  }
+}
 #about > div #about-content {
   color: white;
   text-align: left;
+  grid-area: content;
 }
 #about > div #about-content h1 {
   margin-bottom: 15px;
