@@ -11,10 +11,12 @@
     @include lg {
         padding-bottom: 74px; 
         grid-template-columns: auto 1000px auto;
+        padding-bottom: 100px;
     }
     
     @include xl {
         grid-template-columns: auto 1400px auto;
+        
     }
 
     >div{
@@ -24,12 +26,14 @@
         #icon{
             display: flex;
             align-items: center;
+
             
             
             font-size: rem-calc(20);
 
             h5{
                 margin-left: 15px;
+               
             }
            
         }
