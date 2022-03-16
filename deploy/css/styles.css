@@ -643,7 +643,7 @@ header > div #nav-container {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -797,11 +797,6 @@ header > div #nav-container {
 #gdfiles > div {
   grid-area: gdfiles;
 }
-#gdfiles > div ul {
-  display: grid;
-  grid-template-columns: 32px auto 32px;
-  grid-template-areas: ". f1 ." ". f2 ." ". f3 ." ". f4 ." ". f5 ." ". f6 .";
-}
 @media (min-width: 768px) {
   #gdfiles > div ul {
     display: grid;
@@ -852,7 +847,6 @@ header > div #nav-container {
   background-position: center;
   background-size: cover;
   height: 640px;
-  width: 85vw;
 }
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
@@ -874,7 +868,6 @@ header > div #nav-container {
   background-size: cover;
   background-position: center;
   height: 560px;
-  width: 85vw;
 }
 @media (min-width: 768px) {
   #wabisabi > div #wabisabi-image {
