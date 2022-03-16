@@ -1,0 +1,27 @@
+#tattoos{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". tattoos .";
+    background-color: black;
+    padding: 64px 0;
+ 
+    @include lg {
+       grid-template-columns: auto 1000px auto;
+    }
+ 
+ 
+    @include xl {
+       grid-template-columns: auto 1400px auto;
+    }
+ 
+
+    >div{
+        grid-area: tattoos;
+
+        #t-gallery{
+            ul{
+                display: grid;
+            }
+        }
+    }
+}

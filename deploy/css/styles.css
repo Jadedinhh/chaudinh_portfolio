@@ -927,6 +927,30 @@ header > div #nav-container {
   font-style: italic;
 }
 
+#tattoos {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". tattoos .";
+  background-color: black;
+  padding: 64px 0;
+}
+@media (min-width: 1024px) {
+  #tattoos {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #tattoos {
+    grid-template-columns: auto 1400px auto;
+  }
+}
+#tattoos > div {
+  grid-area: tattoos;
+}
+#tattoos > div #t-gallery ul {
+  display: grid;
+}
+
 #photography > div #p-image {
   background-image: url("../img/m&m/Mai1.png");
   background-position: cover;

@@ -166,6 +166,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/tattoos\/8ball.jpg" : {
+      "ft" : 16384,
+      "iS" : 170725,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tattoos\/8ball.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/tattoos\/cactus.jpg" : {
       "ft" : 16384,
       "iS" : 177318,
@@ -198,6 +211,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/tattoos\/cun.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tattoos\/dot.jpg" : {
+      "ft" : 16384,
+      "iS" : 180568,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tattoos\/dot.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
