@@ -971,7 +971,7 @@ header > div #nav-container {
   grid-area: t2;
 }
 #tattoos > div #t-gallery ul li:nth-child(3) {
-  grid-area: t2;
+  grid-area: t3;
 }
 #tattoos > div #t-gallery ul li:nth-child(4) {
   grid-area: t4;
