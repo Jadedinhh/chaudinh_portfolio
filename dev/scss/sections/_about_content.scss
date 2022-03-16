@@ -12,7 +12,7 @@
    }
 
    @include lg {
-    grid-template-columns: auto 800px auto;
+    grid-template-columns: auto 850px auto;
     padding: 100px 0;
   
  }
@@ -46,23 +46,20 @@
            
            grid-area: photo;
 
-           @include md{
-               background-image: url("../img/logo/logo2.svg");
-               background-position: center;
-               background-size: cover;
-               height: 220px;
-               width: 250px;
-               
-               align-items: right;
-           }
+
+        @include md{
+            display: flex;
+            justify-self: flex-end;
+            
+        }
       
 
            img{
               width: 30%; 
 
               @include md{
-                  width: 60%;
-                  display: none;
+                  width: 80%;
+                //   display: none;
                   
               }
            }
@@ -89,7 +86,8 @@
 
             p{
                 font-size: rem-calc(16);
-                font-weight: 300;
+                font-weight: 400;
+                line-height: 25px;
             }
         }
 

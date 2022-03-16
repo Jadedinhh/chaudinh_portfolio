@@ -391,7 +391,7 @@ body .categories {
     Typography
 ============= */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 a {
@@ -686,7 +686,7 @@ header > div #nav-container {
 }
 @media (min-width: 1024px) {
   #about {
-    grid-template-columns: auto 800px auto;
+    grid-template-columns: auto 850px auto;
     padding: 100px 0;
   }
 }
@@ -710,12 +710,8 @@ header > div #nav-container {
 }
 @media (min-width: 768px) {
   #about > div #about-photo {
-    background-image: url("../img/logo/logo2.svg");
-    background-position: center;
-    background-size: cover;
-    height: 220px;
-    width: 250px;
-    align-items: right;
+    display: flex;
+    justify-self: flex-end;
   }
 }
 #about > div #about-photo img {
@@ -723,8 +719,7 @@ header > div #nav-container {
 }
 @media (min-width: 768px) {
   #about > div #about-photo img {
-    width: 60%;
-    display: none;
+    width: 80%;
   }
 }
 #about > div #about-content {
@@ -741,7 +736,8 @@ header > div #nav-container {
 }
 #about > div #about-content p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 #quote1 {
@@ -876,7 +872,7 @@ header > div #nav-container {
   background-image: url("../img/wabisabi/wabisabi1.png");
   background-size: cover;
   background-position: center;
-  height: 590px;
+  height: 640px;
 }
 @media (min-width: 768px) {
   #wabisabi > div #wabisabi-image {
