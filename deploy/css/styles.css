@@ -779,14 +779,14 @@ header > div #nav-container {
 }
 
 #gdfiles {
-  display: grid;
-  grid-template-areas: ". gdfiles .";
   background-color: black;
   padding: 64px 0;
 }
 @media (min-width: 1024px) {
   #gdfiles {
+    display: grid;
     grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". gdfiles .";
   }
 }
 @media (min-width: 1200px) {
@@ -796,6 +796,11 @@ header > div #nav-container {
 }
 #gdfiles > div {
   grid-area: gdfiles;
+}
+#gdfiles > div ul {
+  display: grid;
+  grid-template-columns: 32px auto 32px;
+  grid-template-areas: ". f1 ." ". f2 ." ". f3 ." ". f4 ." ". f5 ." ". f6 .";
 }
 @media (min-width: 768px) {
   #gdfiles > div ul {
@@ -807,7 +812,6 @@ header > div #nav-container {
 }
 @media (min-width: 1024px) {
   #gdfiles > div ul {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". . f6";
     gap: 15px;
@@ -847,11 +851,13 @@ header > div #nav-container {
   background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
   background-position: center;
   background-size: cover;
-  height: 680px;
+  height: 640px;
+  width: 85vw;
 }
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
     height: 480px;
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -867,11 +873,13 @@ header > div #nav-container {
   background-image: url("../img/wabisabi/wabisabi1.png");
   background-size: cover;
   background-position: center;
-  height: 640px;
+  height: 560px;
+  width: 85vw;
 }
 @media (min-width: 768px) {
   #wabisabi > div #wabisabi-image {
     grid-area: wabisabi-image;
+    width: auto;
   }
 }
 @media (min-width: 1024px) {

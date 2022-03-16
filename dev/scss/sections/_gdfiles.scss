@@ -1,12 +1,12 @@
 #gdfiles {
-   display: grid;
-   // grid-template-columns: 16px auto 16px;
-   grid-template-areas: ". gdfiles .";
+  
    background-color: black;
    padding: 64px 0;
 
-   @include lg {
-      grid-template-columns: auto 1000px auto;
+   @include lg { 
+      display: grid;
+      grid-template-columns: auto 1000px auto; 
+      grid-template-areas: ". gdfiles .";
    }
 
 
@@ -23,6 +23,15 @@
 
       ul {
 
+         display: grid;
+         grid-template-columns: 32px auto 32px;
+         grid-template-areas: ". f1 ."
+         ". f2 ."
+         ". f3 ."
+         ". f4 ."
+         ". f5 ."
+         ". f6 .";
+
          @include md {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -34,7 +43,7 @@
 
 
          @include lg {
-            display: grid;
+
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "f1 . ."
                ". f2 ."

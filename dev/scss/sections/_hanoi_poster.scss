@@ -1,8 +1,5 @@
 #hanoi{
-    // @include md{
-    //     grid-template-columns: 32px auto 32px;
-    // }
-
+    
      >div{
 
          #hanoi-content{
@@ -16,10 +13,12 @@
              background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
              background-position: center;
              background-size: cover;
-             height: 680px;
+             height: 640px;
+             width: 85vw;
 
              @include lg{
                  height: 480px;
+                 width: auto;
 
              }
 
