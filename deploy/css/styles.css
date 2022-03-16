@@ -372,7 +372,7 @@ body .number {
 }
 body .categories {
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 4.375rem;
   margin-bottom: 30px;
   color: white;
 }
@@ -814,11 +814,17 @@ header > div #nav-container {
 }
 #gdfiles > div ul li {
   padding-bottom: 64px;
+  display: grid;
+  grid-template-columns: 32px auto 32px;
+  grid-template-areas: ". gd-content .";
 }
 @media (min-width: 1024px) {
   #gdfiles > div ul li {
     padding-bottom: 0px;
   }
+}
+#gdfiles > div ul li > div {
+  grid-area: gd-content;
 }
 #gdfiles > div ul #f1 {
   grid-area: f1;
