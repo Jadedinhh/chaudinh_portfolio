@@ -55,6 +55,11 @@
             grid-template-areas: ". gd-content .";
 
 
+            @include md{
+               grid-template-columns: 0 auto 0;
+            }
+
+
             @include lg{
                padding-bottom: 0px;
             }

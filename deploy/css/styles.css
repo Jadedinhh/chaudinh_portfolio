@@ -675,7 +675,7 @@ header > div #nav-container {
   padding-top: 64px;
   background-color: black;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 32px auto 32px;
   grid-template-areas: ". header .";
 }
 @media (min-width: 768px) {
@@ -746,7 +746,7 @@ header > div #nav-container {
   text-align: left;
   padding-top: 64px;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 32px auto 32px;
   grid-template-areas: ". quote1 . ";
 }
 @media (min-width: 1024px) {
@@ -817,6 +817,11 @@ header > div #nav-container {
   display: grid;
   grid-template-columns: 32px auto 32px;
   grid-template-areas: ". gd-content .";
+}
+@media (min-width: 768px) {
+  #gdfiles > div ul li {
+    grid-template-columns: 0 auto 0;
+  }
 }
 @media (min-width: 1024px) {
   #gdfiles > div ul li {
@@ -973,7 +978,6 @@ header > div #nav-container {
   background-color: #000;
   color: white;
   padding: 64px 0;
-  font-family: "Averia Libre", cursive;
   font-weight: 300;
   font-size: 5rem;
 }

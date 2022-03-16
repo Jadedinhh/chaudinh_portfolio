@@ -3,7 +3,7 @@
     background-color: black;
 
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 32px auto 32px;
     grid-template-areas: ". header .";
 
    @include md{
