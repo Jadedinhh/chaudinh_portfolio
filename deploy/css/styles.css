@@ -462,6 +462,11 @@ figure {
   color: #005445;
 }
 @media (min-width: 1024px) {
+  #nav-container ul li button:hover {
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
   #nav-container ul li button {
     font-size: 1.25rem;
     color: #EF4136;

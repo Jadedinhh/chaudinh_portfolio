@@ -31,6 +31,10 @@
         
                 &:hover {
                     color: $jade;
+
+                    @include lg{
+                        color: white;
+                    }
                 }
         
                 @include lg {
