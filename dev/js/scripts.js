@@ -1,5 +1,5 @@
 import { tattoos } from "./tattoos";
-// import { burgerTL } from "./burgerAnimation";
+import { burgerTL } from "./burgerAnimation";
 // import { menuAnimator } from "./mobileMenu";
 // import { displayWindowSize } from "./mobileResizing";
 // import {scrollPage } from "./pageScroll";
@@ -20,21 +20,21 @@ window.addEventListener('load', function() {
 
 });
 
-// var burgerButton = document.querySelector("#burger");
+var burgerButton = document.querySelector("#burger");
 
-// let burgerClicked = false;
+let burgerClicked = false;
 
-// function openCloseMenu(){
-//     if(burgerClicked === false){
-//       burgerTL.play();
-//       menuAnimator.play();
-//       burgerClicked = true;
-//   }else{
-//       burgerTL.reverse();
-//       menuAnimator.reverse();
-//       burgerClicked = false;
-//     } 
-//  }
+function openCloseMenu(){
+    if(burgerClicked === false){
+      burgerTL.play();
+      menuAnimator.play();
+      burgerClicked = true;
+  }else{
+      burgerTL.reverse();
+      menuAnimator.reverse();
+      burgerClicked = false;
+    } 
+ }
 
 //  burgerButton.addEventListener("click", openCloseMenu);
 
