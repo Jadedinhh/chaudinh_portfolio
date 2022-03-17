@@ -1,8 +1,28 @@
 import { tattoos } from "./tattoos";
-import { burgerTL } from "./burgerAnimation";
-import { menuAnimator } from "./mobileMenu";
-import { displayWindowSize } from "./mobileResizing";
-import {scrollPage } from "./pageScroll";
+// import { burgerTL } from "./burgerAnimation";
+// import { menuAnimator } from "./mobileMenu";
+// import { displayWindowSize } from "./mobileResizing";
+// import {scrollPage } from "./pageScroll";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+const showAnim = gsap.from('.main-tool-bar', { 
+    yPercent: -100,
+    paused: true,
+    duration: 0.2
+  }).progress(1);
+  
+  ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    }
+  });
 
 
 window.addEventListener('load', function() {
@@ -20,48 +40,48 @@ window.addEventListener('load', function() {
 
 });
 
-var burgerButton = document.querySelector("#burger");
+// var burgerButton = document.querySelector("#burger");
 
-let burgerClicked = false;
+// let burgerClicked = false;
 
-function openCloseMenu(){
-    if(burgerClicked === false){
-      burgerTL.play();
-      menuAnimator.play();
-      burgerClicked = true;
-  }else{
-      burgerTL.reverse();
-      menuAnimator.reverse();
-      burgerClicked = false;
-    } 
- }
+// function openCloseMenu(){
+//     if(burgerClicked === false){
+//       burgerTL.play();
+//       menuAnimator.play();
+//       burgerClicked = true;
+//   }else{
+//       burgerTL.reverse();
+//       menuAnimator.reverse();
+//       burgerClicked = false;
+//     } 
+//  }
 
- burgerButton.addEventListener("click", openCloseMenu);
+//  burgerButton.addEventListener("click", openCloseMenu);
 
-let navButtons = document.querySelectorAll(".nav-btns");
+// let navButtons = document.querySelectorAll(".nav-btns");
 
-for(const button of navButtons){
-    button.addEventListener("click", checkScrolling);
-    button.addEventListener("click", openCloseMenu);
-}
+// for(const button of navButtons){
+//     button.addEventListener("click", checkScrolling);
+//     button.addEventListener("click", openCloseMenu);
+// }
 
 
-function checkScrolling(e) {
-    const indexValue = [].indexOf.call(navButtons, e.target)
+// function checkScrolling(e) {
+//     const indexValue = [].indexOf.call(navButtons, e.target)
     
-    if (indexValue != -1){
-        scrollPage(indexValue -1);
-    }
-}
+//     if (indexValue != -1){
+//         scrollPage(indexValue -1);
+//     }
+// }
 
-window.addEventListener("resize", function(){
-    if(burgerClicked === true){
-        console.log("fire");
-        openCloseMenu();
-    }
-});
+// window.addEventListener("resize", function(){
+//     if(burgerClicked === true){
+//         console.log("fire");
+//         openCloseMenu();
+//     }
+// });
 
 
-window.addEventListener("resize", displayWindowSize);
+// window.addEventListener("resize", displayWindowSize);
 
-window.addEventListener('load', displayWindowSize);
+// window.addEventListener('load', displayWindowSize);

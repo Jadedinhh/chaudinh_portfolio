@@ -481,6 +481,7 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+  position: fixed;
 }
 @media (min-width: 1024px) {
   header {
@@ -496,43 +497,49 @@ header {
 }
 header > div {
   grid-area: header;
+}
+header > div .main-tool-bar {
   display: grid;
   grid-area: header;
   grid-template-areas: " logo burger" "nav nav";
   grid-template-columns: 30% auto;
+  transition: ease 0.4s;
+}
+header > div .main-tool-bar--scrolled {
+  height: 70px;
 }
 @media (min-width: 1024px) {
-  header > div {
+  header > div .main-tool-bar {
     grid-template-areas: "logo nav";
   }
 }
-header > div #logo-container {
+header > div .main-tool-bar #logo-container {
   grid-area: logo;
   padding: 15px;
   width: 80%;
 }
 @media (min-width: 768px) {
-  header > div #logo-container {
+  header > div .main-tool-bar #logo-container {
     width: 60%;
   }
 }
 @media (min-width: 1024px) {
-  header > div #logo-container {
+  header > div .main-tool-bar #logo-container {
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  header > div #logo-container {
+  header > div .main-tool-bar #logo-container {
     width: 30%;
   }
 }
-header > div aside {
+header > div .main-tool-bar aside {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 15px;
 }
-header > div aside #burger-container {
+header > div .main-tool-bar aside #burger-container {
   cursor: pointer;
   position: relative;
   grid-area: burger;
@@ -540,17 +547,17 @@ header > div aside #burger-container {
   width: 50px;
 }
 @media (min-width: 1024px) {
-  header > div aside #burger-container {
+  header > div .main-tool-bar aside #burger-container {
     display: none !important;
   }
 }
-header > div aside #burger-container #burger {
+header > div .main-tool-bar aside #burger-container #burger {
   position: absolute;
   z-index: 1000;
   height: 50px;
   width: 50px;
 }
-header > div #nav-container {
+header > div .main-tool-bar #nav-container {
   grid-area: nav;
   background-color: black;
   background-image: Linear-gradient(#000, rgba(6, 51, 21, 0.24)), url("../img/logo/logo2.svg");
@@ -562,7 +569,7 @@ header > div #nav-container {
   background-size: cover;
 }
 @media (min-width: 1024px) {
-  header > div #nav-container {
+  header > div .main-tool-bar #nav-container {
     background-color: transparent;
     background-image: none;
     position: static;
@@ -661,17 +668,7 @@ header > div #nav-container {
 }
 
 #hero {
-  margin-top: -235px;
-}
-@media (min-width: 768px) {
-  #hero {
-    margin-top: -300px;
-  }
-}
-@media (min-width: 1200px) {
-  #hero {
-    margin-top: -230px;
-  }
+  margin-top: 0px;
 }
 #hero > div {
   background-image: linear-gradient(rgba(6, 51, 21, 0.24), rgba(6, 51, 21, 0.24)), url("../img/m&m/mai.png");

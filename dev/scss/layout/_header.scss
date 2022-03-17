@@ -2,14 +2,15 @@
     Header
 ============= */
 header {
-   
+
 
     width: 100%;
     left: 0;
     top: 0;
+    position: fixed;
 
 
-    @include lg { 
+    @include lg {
         display: grid;
         grid-template-areas: ". header .";
         grid-template-columns: auto 1000px auto;
@@ -23,110 +24,121 @@ header {
 
 
 
+
     >div {
 
         grid-area: header;
 
-        display: grid;
-        grid-area: header;
-        grid-template-areas: " logo burger"
-                                "nav nav";
-        grid-template-columns: 30% auto;
+        .main-tool-bar {
+            display: grid;
+            grid-area: header;
+            grid-template-areas: " logo burger"
+                "nav nav";
+            grid-template-columns: 30% auto;
 
+            transition: ease 0.4s;
 
-
-        @include lg {
-            grid-template-areas: "logo nav";
-        }
-
-        #logo-container {
-
-
-            grid-area: logo;
-
-           padding: 15px;
-
-            width: 80%;
-
-            @include md {
-                width: 60%;
+            &--scrolled {
+                height: 70px;
             }
+
 
             @include lg {
-                width: 50%;
+                grid-template-areas: "logo nav";
             }
 
-            @include xl {
-                width: 30%;
-            }
-
-        }
-
-        aside {
-
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            // width: 100%;  
-            padding: 15px;
-            // padding-right: 30px;
+            #logo-container {
 
 
-            #burger-container {
+                grid-area: logo;
 
+                padding: 15px;
 
+                width: 80%;
 
-                cursor: pointer;
-                position: relative;
-                grid-area: burger;
-                height: 50px;
-                width: 50px;
-              
-
+                @include md {
+                    width: 60%;
+                }
 
                 @include lg {
-                    display: none !important;
+                    width: 50%;
                 }
 
-                #burger{
-                    position: absolute;
-                    z-index: 1000;
+                @include xl {
+                    width: 30%;
+                }
+
+            }
+
+            aside {
+
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                // width: 100%;  
+                padding: 15px;
+                // padding-right: 30px;
+
+
+                #burger-container {
+
+
+
+                    cursor: pointer;
+                    position: relative;
+                    grid-area: burger;
                     height: 50px;
                     width: 50px;
-                    // border: 1px solid red;
-                    // background-color: #fff;
+
+
+
+                    @include lg {
+                        display: none !important;
+                    }
+
+                    #burger {
+                        position: absolute;
+                        z-index: 1000;
+                        height: 50px;
+                        width: 50px;
+                    }
+
+
+                }
+            }
+
+
+
+            #nav-container {
+                grid-area: nav;
+                background-color: black;
+                background-image: Linear-gradient($black, $grey), url("../img/logo/logo2.svg");
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                z-index: 500;
+                background-position: center;
+                background-size: cover;
+
+                @include lg {
+                    background-color: transparent;
+                    background-image: none;
+                    position: static;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
                 }
 
-
             }
         }
 
 
-
-        #nav-container {
-            grid-area: nav;
-            background-color: black;
-            background-image: Linear-gradient($black, $grey), url("../img/logo/logo2.svg");
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            z-index: 500;
-            background-position: center;
-            background-size: cover;
-
-            @include lg {
-                background-color: transparent;
-                background-image: none;
-                position: static;
-                height: 100%;
-                width: 100%;
-               display: flex;
-               justify-content: flex-end;
-               align-items: center;
-            }
-
-        }
     }
 
 
+    // .scrollable-area {
+    //     height: 35vh;
+    // }
 }
