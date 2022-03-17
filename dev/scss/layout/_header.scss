@@ -2,21 +2,20 @@
     Header
 ============= */
 header {
-    padding: 20px 0;
+   
 
     width: 100%;
-
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
+    left: 0;
     top: 0;
 
 
-    @include lg {
+    @include lg { 
+        display: grid;
+        grid-template-areas: ". header .";
         grid-template-columns: auto 1000px auto;
     }
 
-    
+
     @include xl {
         grid-template-columns: auto 1400px auto;
     }
@@ -31,10 +30,10 @@ header {
         display: grid;
         grid-area: header;
         grid-template-areas: " logo burger"
-                               "nav nav";
+                                "nav nav";
         grid-template-columns: 30% auto;
 
-        
+
 
         @include lg {
             grid-template-areas: "logo nav";
@@ -45,43 +44,49 @@ header {
 
             grid-area: logo;
 
-            margin-top: 0;
-
-            margin-bottom: 15px;
+           padding: 15px;
 
             width: 80%;
 
-            @include md{
+            @include md {
                 width: 60%;
             }
 
-            @include lg{
+            @include lg {
                 width: 50%;
             }
 
-            @include xl{
+            @include xl {
                 width: 30%;
             }
-            
+
         }
 
+        aside {
 
-        #burger-container {
-
-            
-
-            cursor: pointer;
-            position: absolute;
-            grid-area: burger;
-            height: 50px;
-            width: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            // width: 100%;  
+            padding: 15px;
+            // padding-right: 30px;
 
 
-            @include md {
-                display: none !important;
-            }
+            #burger-container {
 
-            #burger {
+
+
+                cursor: pointer;
+                position: absolute;
+                grid-area: burger;
+                height: 50px;
+                width: 50px;
+              
+
+
+                @include lg {
+                    display: none !important;
+                }
 
                 span {
                     width: 100%;
@@ -91,20 +96,39 @@ header {
                     top: 50;
                     right: 0;
                     width: 100%;
-                    background-color: white;
+                    background-color: $cam;
 
                     &:nth-child(2) {
-                        top: 16px;
+                        top: 8px;
                         width: 100%;
                     }
-                }
-            }
 
+                
+                }
+
+
+            }
         }
+
 
 
         #nav-container {
             grid-area: nav;
+            background-color: $grey;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            // z-index: 500;
+
+            @include lg {
+                background-color: transparent;
+                position: static;
+                height: 100%;
+                width: 100%;
+               display: flex;
+               justify-content: flex-end;
+               align-items: center;
+            }
 
         }
     }

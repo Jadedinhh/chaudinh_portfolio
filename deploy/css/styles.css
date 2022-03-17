@@ -461,15 +461,14 @@ figure {
     Header
 ============= */
 header {
-  padding: 20px 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  left: 0;
   top: 0;
 }
 @media (min-width: 1024px) {
   header {
+    display: grid;
+    grid-template-areas: ". header .";
     grid-template-columns: auto 1000px auto;
   }
 }
@@ -492,8 +491,7 @@ header > div {
 }
 header > div #logo-container {
   grid-area: logo;
-  margin-top: 0;
-  margin-bottom: 15px;
+  padding: 15px;
   width: 80%;
 }
 @media (min-width: 768px) {
@@ -511,19 +509,25 @@ header > div #logo-container {
     width: 30%;
   }
 }
-header > div #burger-container {
+header > div aside {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+}
+header > div aside #burger-container {
   cursor: pointer;
   position: absolute;
   grid-area: burger;
   height: 50px;
   width: 50px;
 }
-@media (min-width: 768px) {
-  header > div #burger-container {
+@media (min-width: 1024px) {
+  header > div aside #burger-container {
     display: none !important;
   }
 }
-header > div #burger-container #burger span {
+header > div aside #burger-container span {
   width: 100%;
   margin-top: 20px;
   height: 3px;
@@ -531,14 +535,29 @@ header > div #burger-container #burger span {
   top: 50;
   right: 0;
   width: 100%;
-  background-color: white;
+  background-color: #EF4136;
 }
-header > div #burger-container #burger span:nth-child(2) {
-  top: 16px;
+header > div aside #burger-container span:nth-child(2) {
+  top: 8px;
   width: 100%;
 }
 header > div #nav-container {
   grid-area: nav;
+  background-color: rgba(6, 51, 21, 0.24);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 1024px) {
+  header > div #nav-container {
+    background-color: transparent;
+    position: static;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 /* =============
@@ -628,7 +647,7 @@ header > div #nav-container {
 }
 
 #hero {
-  margin-top: -240px;
+  margin-top: -140px;
 }
 @media (min-width: 768px) {
   #hero {
