@@ -857,12 +857,11 @@ header > div #nav-container {
   background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
   background-position: center;
   background-size: cover;
-  height: 640px;
+  height: 630px;
 }
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
     height: 480px;
-    width: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -878,7 +877,7 @@ header > div #nav-container {
   background-image: url("../img/wabisabi/wabisabi1.png");
   background-size: cover;
   background-position: center;
-  height: 560px;
+  height: 540px;
 }
 @media (min-width: 768px) {
   #wabisabi > div #wabisabi-image {
@@ -903,8 +902,8 @@ header > div #nav-container {
 #morean > div #morean-image {
   background-image: url("../img/morean/MoreanB.jpg");
   background-size: cover;
-  background-position: -90px center;
-  height: 600px;
+  background-position: -60px center;
+  height: 500px;
 }
 @media (min-width: 768px) {
   #morean > div #morean-image {
@@ -931,7 +930,7 @@ header > div #nav-container {
   background-image: url("../img/jeanne-gang/jeanne.png");
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 520px;
 }
 @media (min-width: 768px) {
   #jeanne > div #jeanne-image {
@@ -958,7 +957,7 @@ header > div #nav-container {
   background-image: url("../img/univers/univers1.png");
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 630px;
 }
 @media (min-width: 1024px) {
   #univers > div #u-image {
@@ -977,7 +976,7 @@ header > div #nav-container {
 #tattoos-opening {
   background-color: #000;
   color: white;
-  padding: 64px 0;
+  padding-bottom: 64px;
   font-weight: 300;
   font-size: 5rem;
 }
@@ -1075,7 +1074,7 @@ header > div #nav-container {
   background-image: url("../img/m&m/Mai1.png");
   background-position: cover;
   background-size: cover;
-  height: 680px;
+  height: 600px;
 }
 @media (min-width: 768px) {
   #photography > div #p-image {
