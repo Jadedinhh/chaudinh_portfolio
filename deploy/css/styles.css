@@ -1054,8 +1054,20 @@ header > div #nav-container {
   background-color: #000;
   color: white;
   padding-bottom: 64px;
-  font-weight: 300;
-  font-size: 5rem;
+  font-size: 5.625rem;
+}
+@media (min-width: 768px) {
+  #tattoos-opening {
+    padding-bottom: 74px;
+  }
+}
+@media (min-width: 1024px) {
+  #tattoos-opening {
+    padding-bottom: 100px;
+  }
+}
+#tattoos-opening p {
+  font-weight: 400;
 }
 #tattoos-opening p span {
   font-style: italic;
@@ -1068,9 +1080,15 @@ header > div #nav-container {
   background-color: black;
   padding-bottom: 64px;
 }
+@media (min-width: 768px) {
+  #tattoos {
+    padding-bottom: 74px;
+  }
+}
 @media (min-width: 1024px) {
   #tattoos {
     grid-template-columns: auto 1000px auto;
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {

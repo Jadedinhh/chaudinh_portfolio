@@ -1,14 +1,21 @@
 #tattoos-opening{
-  //  background-image: linear-gradient(to right, $lipstick-red, $jade);
+  
   background-color: $black;
     color: white;
-    // text-align: center;
+   
     padding-bottom: 64px;
    
-    font-weight: 300;
-    font-size: rem-calc(80);
+    font-size: rem-calc(90);
 
-  p{
+@include md{
+  padding-bottom: 74px;
+}
+
+@include lg{
+  padding-bottom: 100px;
+}
+
+  p{ font-weight: 400;
       span{
           font-style: italic;
       }
