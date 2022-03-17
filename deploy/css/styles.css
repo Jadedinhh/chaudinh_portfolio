@@ -433,27 +433,39 @@ figure {
 /* =============
     Navigation
 ============= */
-@media (min-width: 768px) {
+#nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+@media (min-width: 1024px) {
   #nav-container ul {
     text-align: right;
   }
 }
-#nav-container ul li a:link,
-#nav-container ul li a:visited {
-  color: #EF4136;
-  font-size: 1.125rem;
+#nav-container ul li button {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  color: white;
+  font-size: 4.375rem;
   font-weight: 300;
   transition: 0.25s;
   font-family: "Averia Libre", cursive;
+  line-height: 88px;
+  cursor: pointer;
 }
-#nav-container ul li a:link:hover,
-#nav-container ul li a:visited:hover {
-  color: white;
+#nav-container ul li button:hover {
+  color: #005445;
 }
 @media (min-width: 1024px) {
-  #nav-container ul li a:link,
-#nav-container ul li a:visited {
+  #nav-container ul li button {
     font-size: 1.25rem;
+    color: #EF4136;
+    line-height: 22px;
   }
 }
 
@@ -543,14 +555,19 @@ header > div aside #burger-container span:nth-child(2) {
 }
 header > div #nav-container {
   grid-area: nav;
-  background-color: rgba(6, 51, 21, 0.24);
+  background-color: black;
+  background-image: Linear-gradient(#000, rgba(6, 51, 21, 0.24)), url("../img/logo/logo2.svg");
   position: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: 500;
+  background-position: center;
+  background-size: cover;
 }
 @media (min-width: 1024px) {
   header > div #nav-container {
     background-color: transparent;
+    background-image: none;
     position: static;
     height: 100%;
     width: 100%;

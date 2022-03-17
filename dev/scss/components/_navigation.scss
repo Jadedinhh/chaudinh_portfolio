@@ -2,31 +2,44 @@
     Navigation
 ============= */
 #nav-container{
-   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
 
     ul{
-        @include md {
+        @include lg {
            text-align: right;
         }
 
         li{
-            a:link,
-            a:visited {
-                color:$cam;
-                font-size: rem-calc(18);
+
+            button{
+                background-color: transparent;
+                text-decoration: none;
+                border: none;
+                color:white;
+                font-size: rem-calc(70);
                 font-weight: 300;
                 transition: 0.25s;
                 font-family: 'Averia Libre', cursive;
+                line-height: 88px;
+                cursor: pointer;
                
         
                 &:hover {
-                    color: white;
+                    color: $jade;
                 }
         
                 @include lg {
                     font-size: rem-calc(20);
+                   color: $cam;
+                   line-height: 22px;
                 }
             }
+           
         }
     }
 }

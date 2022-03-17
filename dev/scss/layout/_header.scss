@@ -114,14 +114,18 @@ header {
 
         #nav-container {
             grid-area: nav;
-            background-color: $grey;
+            background-color: black;
+            background-image: Linear-gradient($black, $grey), url("../img/logo/logo2.svg");
             position: fixed;
             width: 100vw;
             height: 100vh;
-            // z-index: 500;
+            z-index: 500;
+            background-position: center;
+            background-size: cover;
 
             @include lg {
                 background-color: transparent;
+                background-image: none;
                 position: static;
                 height: 100%;
                 width: 100%;
