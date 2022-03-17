@@ -25,6 +25,8 @@ const showAnim = gsap.from('.main-tool-bar', {
   });
 
 
+  
+
 window.addEventListener('load', function() {
 
     // console.log(projects[0].title);

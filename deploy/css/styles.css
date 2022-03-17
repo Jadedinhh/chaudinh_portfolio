@@ -439,7 +439,11 @@ figure {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
+}
+@media (min-width: 1024px) {
+  #nav-container {
+    padding-left: 0;
+  }
 }
 @media (min-width: 1024px) {
   #nav-container ul {
@@ -667,9 +671,6 @@ header > div .main-tool-bar #nav-container {
   margin-bottom: 15px;
 }
 
-#hero {
-  margin-top: 0px;
-}
 #hero > div {
   background-image: linear-gradient(rgba(6, 51, 21, 0.24), rgba(6, 51, 21, 0.24)), url("../img/m&m/mai.png");
   background-position: center;
