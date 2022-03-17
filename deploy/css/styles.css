@@ -751,7 +751,6 @@ header > div #nav-container {
 }
 @media (min-width: 1024px) {
   #quote1 {
-    padding-bottom: 74px;
     grid-template-columns: auto 1000px auto;
     padding-bottom: 100px;
   }
@@ -767,6 +766,7 @@ header > div #nav-container {
 #quote1 > div #icon {
   display: flex;
   align-items: center;
+  padding-bottom: 30px;
   font-size: 1.25rem;
 }
 #quote1 > div #icon h5 {
@@ -816,11 +816,6 @@ header > div #nav-container {
 }
 #gdfiles > div ul li {
   padding-bottom: 64px;
-}
-@media (min-width: 1024px) {
-  #gdfiles > div ul li {
-    padding-bottom: 0px;
-  }
 }
 #gdfiles > div ul li > div {
   grid-area: gd-content;
@@ -997,6 +992,21 @@ header > div #nav-container {
 }
 #tattoos > div {
   grid-area: tattoos;
+}
+#tattoos > div #t-link {
+  text-align: right;
+  margin-bottom: 15px;
+}
+#tattoos > div #t-link a:link,
+#tattoos > div #t-link a:visited {
+  color: #EF4136;
+  font-size: 1.25rem;
+  font-weight: 400;
+  transition: 0.25s;
+}
+#tattoos > div #t-link a:link:hover,
+#tattoos > div #t-link a:visited:hover {
+  color: #005445;
 }
 #tattoos > div #t-gallery ul {
   display: grid;
