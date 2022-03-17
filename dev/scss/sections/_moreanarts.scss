@@ -10,7 +10,8 @@
             height: 500px;
 
             @include md{
-                height: 590px;
+                height: 540px;
+                background-position: -70px center;
             }
 
             @include lg{

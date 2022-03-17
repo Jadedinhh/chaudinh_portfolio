@@ -2,11 +2,14 @@
 
    background-color: black;
    padding-top: 64px;
+   display: grid;
+   grid-template-columns: 32px auto 32px;
+   grid-template-areas: ". gdfiles .";
 
    @include lg { 
       display: grid;
       grid-template-columns: auto 1000px auto; 
-      grid-template-areas: ". gdfiles .";
+      
    }
 
 
@@ -50,14 +53,14 @@
             padding-bottom: 64px;
 
 
-            display: grid;
-            grid-template-columns: 32px auto 32px;
-            grid-template-areas: ". gd-content .";
+            // display: grid;
+            // grid-template-columns: 32px auto 32px;
+            // grid-template-areas: ". gd-content .";
 
 
-            @include md{
-               grid-template-columns: 0 auto 0;
-            }
+            // @include md{
+            //    grid-template-columns: 0 auto 0;
+            // }
 
 
             @include lg{
