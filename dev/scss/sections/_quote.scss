@@ -8,10 +8,14 @@
     grid-template-columns: 32px auto 32px;
     grid-template-areas: ". quote1 . ";
 
+    @include md{
+        padding-top: 74px;
+    }
+
     @include lg {
 
         grid-template-columns: auto 1000px auto;
-        padding-bottom: 100px;
+        padding-top: 100px;
     }
     
     @include xl {
@@ -45,6 +49,14 @@
         font-weight: 400;
         font-size: rem-calc(70);
         line-height: 1.5;
+
+        @include md{
+            font-size: rem-calc(80);
+        }
+
+        @include lg{
+            font-size: rem-calc(100);
+        }
        
     }
     }

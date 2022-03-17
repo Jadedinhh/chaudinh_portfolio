@@ -1,14 +1,19 @@
 #gdfiles {
 
    background-color: black;
-   padding-top: 64px;
+   padding: 64px 0;
    display: grid;
    grid-template-columns: 32px auto 32px;
    grid-template-areas: ". gdfiles .";
 
+   @include md{
+      padding: 74px 0;
+   }
+
    @include lg { 
       display: grid;
       grid-template-columns: auto 1000px auto; 
+      padding: 100px 0;
       
    }
 

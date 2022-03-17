@@ -674,7 +674,7 @@ header > div #nav-container {
 }
 
 #about {
-  padding-top: 64px;
+  padding: 64px 0;
   background-color: black;
   display: grid;
   grid-template-columns: 32px auto 32px;
@@ -683,13 +683,13 @@ header > div #nav-container {
 @media (min-width: 768px) {
   #about {
     grid-template-columns: auto 700px auto;
-    padding: 74px 0;
+    padding-top: 74px;
   }
 }
 @media (min-width: 1024px) {
   #about {
     grid-template-columns: auto 850px auto;
-    padding: 100px 0;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -751,10 +751,15 @@ header > div #nav-container {
   grid-template-columns: 32px auto 32px;
   grid-template-areas: ". quote1 . ";
 }
+@media (min-width: 768px) {
+  #quote1 {
+    padding-top: 74px;
+  }
+}
 @media (min-width: 1024px) {
   #quote1 {
     grid-template-columns: auto 1000px auto;
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -779,18 +784,34 @@ header > div #nav-container {
   font-size: 4.375rem;
   line-height: 1.5;
 }
+@media (min-width: 768px) {
+  #quote1 > div p {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #quote1 > div p {
+    font-size: 6.25rem;
+  }
+}
 
 #gdfiles {
   background-color: black;
-  padding-top: 64px;
+  padding: 64px 0;
   display: grid;
   grid-template-columns: 32px auto 32px;
   grid-template-areas: ". gdfiles .";
+}
+@media (min-width: 768px) {
+  #gdfiles {
+    padding: 74px 0;
+  }
 }
 @media (min-width: 1024px) {
   #gdfiles {
     display: grid;
     grid-template-columns: auto 1000px auto;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -872,7 +893,7 @@ header > div #nav-container {
 }
 @media (min-width: 1200px) {
   #hanoi > div #hanoi-image {
-    height: 680px;
+    height: 690px;
   }
 }
 
