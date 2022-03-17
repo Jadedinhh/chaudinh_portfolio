@@ -1,33 +1,45 @@
-#morean{
+#morean {
 
-    >div{
-      
+    >div {
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "morean-image ."
+                "morean-image morean-content";
 
-        #morean-image{
+        }
+
+        #morean-image {
             background-image: url("../img/morean/MoreanB.jpg");
             background-size: cover;
             background-position: -60px center;
             height: 500px;
 
-            @include md{
+            @include md {
                 height: 540px;
                 background-position: -70px center;
             }
 
-            @include lg{
+            @include lg {
                 height: 410px;
-                background-position:  -60px center;
+                background-position: -60px center;
+                grid-area: morean-image;
             }
 
-            @include xl{
+            @include xl {
                 height: 600px;
                 background-position: -90px center;
             }
         }
 
-        #morean-content{
+        #morean-content {
+            grid-area: morean-content;
 
-            color: white;
+            @include lg {
+                margin-left: 20px;
+            }
+
+
         }
     }
 }

@@ -2,6 +2,15 @@
   
     >div {
      
+
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: ". u-image"
+                "u-content u-image";
+          
+        }
+        
         #u-image {
             background-image: url("../img/univers/univers1.png");
             background-size: cover;
@@ -11,6 +20,7 @@
 
             @include lg {
                 height: 480px;
+                grid-area: u-image;
             }
 
             @include xl {
@@ -19,7 +29,12 @@
         }
 
         #u-content {
-            color: white;
+            grid-area: u-content;
+
+            @include lg{
+                text-align: right;
+                margin-right: 20px;
+            }
         }
     }
 }

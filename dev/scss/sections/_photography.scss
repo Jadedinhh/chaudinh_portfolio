@@ -1,28 +1,44 @@
-#photography{
-   
-
-    >div{
-    
-     #p-image{
-         background-image: url("../img/m&m/Mai1.png");
-         background-position: cover;
-         background-size: cover;
-         height: 600px;
+#photography {
 
 
-         @include md{
-             height: 630px;
-         }
+    >div {
 
-         @include lg{
-             height: 460px;
-         }
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "p-image ."
+                "p-image p-content";
 
-         @include xl{
-             height: 670px;
-         }
-     }
+        }
 
+        #p-image {
+            background-image: url("../img/m&m/Mai1.png");
+            background-position: cover;
+            background-size: cover;
+            height: 600px;
+
+
+            @include md {
+                height: 630px;
+            }
+
+            @include lg {
+                height: 460px;
+                grid-area: p-image;
+            }
+
+            @include xl {
+                height: 670px;
+            }
+        }
+
+        #p-content {
+            grid-area: p-content;
+
+            @include lg {
+                margin-left: 20px;
+            }
+        }
 
     }
 }

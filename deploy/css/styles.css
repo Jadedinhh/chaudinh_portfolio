@@ -810,7 +810,7 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #gdfiles > div ul {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f1 . ." ". f2 ." ". . f3" ". f4 ." "f5 . ." ". . f6";
+    grid-template-areas: "f1 f1 ." ". f2 f2" ". f3 f3" "f4 f4 ." "f5 f5 ." ". f6 f6";
     gap: 15px;
   }
 }
@@ -839,8 +839,22 @@ header > div #nav-container {
   grid-area: f6;
 }
 
+@media (min-width: 1024px) {
+  #hanoi > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". h-image" "h-content h-image";
+    gap: 10px;
+  }
+}
 #hanoi > div #hanoi-content {
-  margin-bottom: 15px;
+  grid-area: h-content;
+}
+@media (min-width: 1024px) {
+  #hanoi > div #hanoi-content {
+    text-align: right;
+    margin-right: 20px;
+  }
 }
 #hanoi > div #hanoi-image {
   background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
@@ -851,6 +865,7 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
     height: 480px;
+    grid-area: h-image;
   }
 }
 @media (min-width: 1200px) {
@@ -859,8 +874,12 @@ header > div #nav-container {
   }
 }
 
-#wabisabi {
-  color: white;
+@media (min-width: 1024px) {
+  #wabisabi > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "wabisabi-image ." "wabisabi-image wabisabi-content";
+  }
 }
 #wabisabi > div #wabisabi-image {
   background-image: url("../img/wabisabi/wabisabi1.png");
@@ -886,7 +905,19 @@ header > div #nav-container {
 #wabisabi > div #wabisabi-content {
   grid-area: wabisabi-content;
 }
+@media (min-width: 1024px) {
+  #wabisabi > div #wabisabi-content {
+    margin-left: 20px;
+  }
+}
 
+@media (min-width: 1024px) {
+  #morean > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "morean-image ." "morean-image morean-content";
+  }
+}
 #morean > div #morean-image {
   background-image: url("../img/morean/MoreanB.jpg");
   background-size: cover;
@@ -903,6 +934,7 @@ header > div #nav-container {
   #morean > div #morean-image {
     height: 410px;
     background-position: -60px center;
+    grid-area: morean-image;
   }
 }
 @media (min-width: 1200px) {
@@ -912,9 +944,21 @@ header > div #nav-container {
   }
 }
 #morean > div #morean-content {
-  color: white;
+  grid-area: morean-content;
+}
+@media (min-width: 1024px) {
+  #morean > div #morean-content {
+    margin-left: 20px;
+  }
 }
 
+@media (min-width: 1024px) {
+  #jeanne > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". j-image" "j-content j-image";
+  }
+}
 #jeanne > div #jeanne-image {
   background-image: url("../img/jeanne-gang/jeanne.png");
   background-size: cover;
@@ -931,6 +975,7 @@ header > div #nav-container {
   #jeanne > div #jeanne-image {
     height: 420px;
     background-position: center;
+    grid-area: j-image;
   }
 }
 @media (min-width: 1200px) {
@@ -939,9 +984,22 @@ header > div #nav-container {
   }
 }
 #jeanne > div #jeanne-content {
-  color: white;
+  grid-area: j-content;
+}
+@media (min-width: 1024px) {
+  #jeanne > div #jeanne-content {
+    text-align: right;
+    margin-right: 20px;
+  }
 }
 
+@media (min-width: 1024px) {
+  #univers > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". u-image" "u-content u-image";
+  }
+}
 #univers > div #u-image {
   background-image: url("../img/univers/univers1.png");
   background-size: cover;
@@ -951,6 +1009,7 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #univers > div #u-image {
     height: 480px;
+    grid-area: u-image;
   }
 }
 @media (min-width: 1200px) {
@@ -959,7 +1018,13 @@ header > div #nav-container {
   }
 }
 #univers > div #u-content {
-  color: white;
+  grid-area: u-content;
+}
+@media (min-width: 1024px) {
+  #univers > div #u-content {
+    text-align: right;
+    margin-right: 20px;
+  }
 }
 
 #tattoos-opening {
@@ -1074,6 +1139,13 @@ header > div #nav-container {
   display: inline-block;
 }
 
+@media (min-width: 1024px) {
+  #photography > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "p-image ." "p-image p-content";
+  }
+}
 #photography > div #p-image {
   background-image: url("../img/m&m/Mai1.png");
   background-position: cover;
@@ -1088,10 +1160,19 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   #photography > div #p-image {
     height: 460px;
+    grid-area: p-image;
   }
 }
 @media (min-width: 1200px) {
   #photography > div #p-image {
     height: 670px;
+  }
+}
+#photography > div #p-content {
+  grid-area: p-content;
+}
+@media (min-width: 1024px) {
+  #photography > div #p-content {
+    margin-left: 20px;
   }
 }

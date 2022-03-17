@@ -2,7 +2,13 @@
  
 
     >div {
-       
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: ". j-image"
+                "j-content j-image";
+           
+        }
 
         #jeanne-image {
             background-image: url("../img/jeanne-gang/jeanne.png");
@@ -19,6 +25,7 @@
             @include lg{
                 height: 420px;
                 background-position: center;
+                grid-area: j-image;
             }
 
             @include xl{
@@ -28,7 +35,14 @@
         }
 
         #jeanne-content {
-            color: white;
+            // color: white;
+            grid-area: j-content;
+
+            @include lg{
+                 text-align: right;
+                 margin-right: 20px;
+            }
+           
         }
     }
 }

@@ -1,29 +1,36 @@
 #wabisabi {
 
 
-    color: white;
+
 
     >div {
 
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "wabisabi-image ."
+                "wabisabi-image wabisabi-content";
+
+        }
 
         #wabisabi-image {
             background-image: url("../img/wabisabi/wabisabi1.png");
             background-size: cover;
             background-position: center;
             height: 540px;
-            
+
 
             @include md {
                 grid-area: wabisabi-image;
 
-                
+
             }
 
             @include lg {
                 height: 430px;
             }
 
-            @include xl{
+            @include xl {
                 height: 600px;
             }
 
@@ -31,6 +38,10 @@
 
         #wabisabi-content {
             grid-area: wabisabi-content;
+
+            @include lg{
+                margin-left: 20px;
+            }
         }
     }
 }

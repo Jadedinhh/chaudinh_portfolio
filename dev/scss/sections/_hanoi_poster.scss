@@ -2,11 +2,22 @@
     
      >div{
 
-         #hanoi-content{
-            //  color: white;
-             margin-bottom: 15px;
 
-           
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: ". h-image"
+                "h-content h-image";
+            gap: 10px;
+        }
+
+         #hanoi-content{
+           grid-area: h-content;
+
+           @include lg{
+               text-align: right;
+               margin-right: 20px;
+           }
          }
 
          #hanoi-image{
@@ -18,6 +29,7 @@
 
              @include lg{
                  height: 480px;
+                 grid-area: h-image;
 
              }
 
