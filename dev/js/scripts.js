@@ -15,15 +15,5 @@ window.addEventListener('load', function() {
 
     });
 
-    // let heroLinks = document.querySelectorAll("#gallery a");
-
-    // heroLinks.forEach((link, i) => {
-    //     // console.log("hello");
-
-    //     link.addEventListener("click", () =>{
-    //         localStorage.setItem("indexValue", i);
-    //         link.href = "detail.html?=" + projects[i].title;
-    //     });
-    // });
 })
 

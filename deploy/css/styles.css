@@ -1082,7 +1082,7 @@ header > div #nav-container {
   background-color: #000;
   color: white;
   padding-bottom: 64px;
-  font-size: 5.625rem;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #tattoos-opening {
@@ -1099,6 +1099,14 @@ header > div #nav-container {
 }
 #tattoos-opening p span {
   font-style: italic;
+}
+#tattoos-opening .wrapper {
+  display: flex;
+}
+#tattoos-opening .text {
+  font-size: clamp(8rem, 15vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
 }
 
 #tattoos {

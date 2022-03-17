@@ -4,8 +4,8 @@
     color: white;
    
     padding-bottom: 64px;
-   
-    font-size: rem-calc(90);
+    // font-size: rem-calc(90);
+    overflow: hidden;
 
 @include md{
   padding-bottom: 74px;
@@ -20,4 +20,16 @@
           font-style: italic;
       }
   }
+
+  .wrapper{
+    display: flex;
+  }
+
+  .text{
+    font-size: clamp(8rem, 15vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
+  }
+
+
 }
