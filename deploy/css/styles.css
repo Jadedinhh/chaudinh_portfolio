@@ -529,7 +529,7 @@ header > div aside {
 }
 header > div aside #burger-container {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   grid-area: burger;
   height: 50px;
   width: 50px;
@@ -539,19 +539,11 @@ header > div aside #burger-container {
     display: none !important;
   }
 }
-header > div aside #burger-container span {
-  width: 100%;
-  margin-top: 20px;
-  height: 3px;
+header > div aside #burger-container #burger {
   position: absolute;
-  top: 50;
-  right: 0;
-  width: 100%;
-  background-color: #EF4136;
-}
-header > div aside #burger-container span:nth-child(2) {
-  top: 8px;
-  width: 100%;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
 }
 header > div #nav-container {
   grid-area: nav;
@@ -664,7 +656,7 @@ header > div #nav-container {
 }
 
 #hero {
-  margin-top: -140px;
+  margin-top: -235px;
 }
 @media (min-width: 768px) {
   #hero {

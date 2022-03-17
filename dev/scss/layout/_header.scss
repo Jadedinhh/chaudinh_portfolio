@@ -77,7 +77,7 @@ header {
 
 
                 cursor: pointer;
-                position: absolute;
+                position: relative;
                 grid-area: burger;
                 height: 50px;
                 width: 50px;
@@ -88,22 +88,13 @@ header {
                     display: none !important;
                 }
 
-                span {
-                    width: 100%;
-                    margin-top: 20px;
-                    height: 3px;
+                #burger{
                     position: absolute;
-                    top: 50;
-                    right: 0;
-                    width: 100%;
-                    background-color: $cam;
-
-                    &:nth-child(2) {
-                        top: 8px;
-                        width: 100%;
-                    }
-
-                
+                    z-index: 1000;
+                    height: 50px;
+                    width: 50px;
+                    // border: 1px solid red;
+                    // background-color: #fff;
                 }
 
 
