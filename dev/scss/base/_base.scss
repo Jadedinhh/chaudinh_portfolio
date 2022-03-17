@@ -6,7 +6,7 @@ body{
 
     .number{
         font-family: 'Averia Libre', cursive;
-        font-style: italic;
+        // font-style: italic;
         font-weight: 400;
         font-size: rem-calc(80);
         margin: 15px 0;
@@ -17,7 +17,8 @@ body{
         }
 
         @include lg{
-            font-size: rem-calc(30);
+            font-size: rem-calc(100);
+            margin: 0;
         }
     }
 
@@ -26,15 +27,16 @@ body{
         font-weight: 400;
         font-size: rem-calc(70);
         margin-bottom: 30px;
-        // font-style: italic;
         color: white;
+        font-weight: 400;
        
         @include md{
             font-size: rem-calc(40);
         }
 
         @include lg{
-            font-size: rem-calc(30);
+            font-size: rem-calc(50);
+            margin-bottom: 0;
         }
     }
 }

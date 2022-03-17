@@ -354,7 +354,6 @@ template {
 ============= */
 body .number {
   font-family: "Averia Libre", cursive;
-  font-style: italic;
   font-weight: 400;
   font-size: 5rem;
   margin: 15px 0;
@@ -367,7 +366,8 @@ body .number {
 }
 @media (min-width: 1024px) {
   body .number {
-    font-size: 1.875rem;
+    font-size: 6.25rem;
+    margin: 0;
   }
 }
 body .categories {
@@ -375,6 +375,7 @@ body .categories {
   font-size: 4.375rem;
   margin-bottom: 30px;
   color: white;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   body .categories {
@@ -383,7 +384,8 @@ body .categories {
 }
 @media (min-width: 1024px) {
   body .categories {
-    font-size: 1.875rem;
+    font-size: 3.125rem;
+    margin-bottom: 0;
   }
 }
 
