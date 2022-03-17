@@ -1,8 +1,8 @@
 import { tattoos } from "./tattoos";
 import { burgerTL } from "./burgerAnimation";
-// import { menuAnimator } from "./mobileMenu";
-// import { displayWindowSize } from "./mobileResizing";
-// import {scrollPage } from "./pageScroll";
+import { menuAnimator } from "./mobileMenu";
+import { displayWindowSize } from "./mobileResizing";
+import {scrollPage } from "./pageScroll";
 
 
 window.addEventListener('load', function() {
@@ -36,32 +36,32 @@ function openCloseMenu(){
     } 
  }
 
-//  burgerButton.addEventListener("click", openCloseMenu);
+ burgerButton.addEventListener("click", openCloseMenu);
 
-// let navButtons = document.querySelectorAll(".nav-btns");
+let navButtons = document.querySelectorAll(".nav-btns");
 
-// for(const button of navButtons){
-//     button.addEventListener("click", checkScrolling);
-//     button.addEventListener("click", openCloseMenu);
-// }
+for(const button of navButtons){
+    button.addEventListener("click", checkScrolling);
+    button.addEventListener("click", openCloseMenu);
+}
 
 
-// function checkScrolling(e) {
-//     const indexValue = [].indexOf.call(navButtons, e.target)
+function checkScrolling(e) {
+    const indexValue = [].indexOf.call(navButtons, e.target)
     
-//     if (indexValue != -1){
-//         scrollPage(indexValue -1);
-//     }
-// }
+    if (indexValue != -1){
+        scrollPage(indexValue -1);
+    }
+}
 
-// window.addEventListener("resize", function(){
-//     if(burgerClicked === true){
-//         console.log("fire");
-//         openCloseMenu();
-//     }
-// });
+window.addEventListener("resize", function(){
+    if(burgerClicked === true){
+        console.log("fire");
+        openCloseMenu();
+    }
+});
 
 
-// window.addEventListener("resize", displayWindowSize);
+window.addEventListener("resize", displayWindowSize);
 
-// window.addEventListener('load', displayWindowSize);
+window.addEventListener('load', displayWindowSize);
