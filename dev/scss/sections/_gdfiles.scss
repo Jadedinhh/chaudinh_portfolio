@@ -51,21 +51,6 @@
 
          li {
             padding-bottom: 64px;
-
-
-            // display: grid;
-            // grid-template-columns: 32px auto 32px;
-            // grid-template-areas: ". gd-content .";
-
-
-            // @include md{
-            //    grid-template-columns: 0 auto 0;
-            // }
-
-
-            @include lg{
-               padding-bottom: 0px;
-            }
            
            >div{
               grid-area: gd-content;
