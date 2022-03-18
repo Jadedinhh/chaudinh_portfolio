@@ -31,10 +31,13 @@
                 font-family: 'Averia Libre', cursive;
                 line-height: 88px;
                 cursor: pointer;
+
+               
                
         
                 &:hover {
                     color: $jade;
+                  
 
                     @include lg{
                         color: white;
