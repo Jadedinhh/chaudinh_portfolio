@@ -568,7 +568,7 @@ header > div .main-tool-bar #nav-container {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 800;
+  z-index: -800;
   background-position: center;
   background-size: cover;
 }
@@ -1107,7 +1107,7 @@ header > div .main-tool-bar #nav-container {
   display: flex;
 }
 #tattoos-opening .text {
-  font-size: clamp(8rem, 15vw, 16rem);
+  font-size: clamp(7rem, 15vw, 16rem);
   line-height: 1;
   font-weight: 900;
 }
