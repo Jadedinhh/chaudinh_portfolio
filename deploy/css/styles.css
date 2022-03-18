@@ -571,6 +571,7 @@ header > div .main-tool-bar #nav-container {
   z-index: 800;
   background-position: center;
   background-size: cover;
+  margin-top: -150px;
 }
 @media (min-width: 1024px) {
   header > div .main-tool-bar #nav-container {
@@ -582,6 +583,7 @@ header > div .main-tool-bar #nav-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 0;
   }
 }
 
@@ -593,7 +595,7 @@ header > div .main-tool-bar #nav-container {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-image: linear-gradient(90deg, black, black, black, #EF4136);
+  background-image: linear-gradient(135deg, black, black, black, #EF4136);
 }
 @media (min-width: 1024px) {
   #footer {
