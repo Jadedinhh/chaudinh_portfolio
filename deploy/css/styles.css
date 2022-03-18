@@ -584,9 +584,6 @@ header > div .main-tool-bar #nav-container {
     align-items: center;
   }
 }
-header .scrollable-area {
-  height: 100vh;
-}
 
 /* =============
     Footer
