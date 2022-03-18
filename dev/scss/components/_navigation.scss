@@ -31,7 +31,7 @@
                 font-family: 'Averia Libre', cursive;
                 line-height: 88px;
                 cursor: pointer;
-
+                display: inline-block;
                
                
         
@@ -49,6 +49,8 @@
                    color: $cam;
                    line-height: 22px;
                 }
+
+                
             }
            
         }
