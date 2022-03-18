@@ -573,6 +573,11 @@ header > div .main-tool-bar #nav-container {
   background-size: cover;
   margin-top: -150px;
 }
+@media (min-width: 768px) {
+  header > div .main-tool-bar #nav-container {
+    margin-top: -175px;
+  }
+}
 @media (min-width: 1024px) {
   header > div .main-tool-bar #nav-container {
     background-color: transparent;
