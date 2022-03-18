@@ -5,7 +5,7 @@
     padding-top: 64px;
 
     display: grid;
-    grid-template-columns: 32px auto 32px;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". quote1 . ";
 
     @include md{
@@ -47,7 +47,7 @@
 
         
         font-weight: 400;
-        font-size: rem-calc(70);
+        font-size: rem-calc(50);
         line-height: 1.5;
 
         @include md{

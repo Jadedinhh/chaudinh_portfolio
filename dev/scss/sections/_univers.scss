@@ -15,8 +15,14 @@
             background-image: url("../img/univers/univers1.png");
             background-size: cover;
             background-position: center;
-            height: 630px;
+            height: 530px;
 
+
+
+            @include md{
+                height: 630px;
+
+            }
 
             @include lg {
                 height: 480px;

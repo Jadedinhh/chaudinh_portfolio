@@ -13,10 +13,12 @@
             background-image: url("../img/morean/MoreanB.jpg");
             background-size: cover;
             background-position: -60px center;
-            height: 500px;
+            height: 460px;
+           
 
             @include md {
                 height: 540px;
+                width: auto;
                 background-position: -70px center;
             }
 

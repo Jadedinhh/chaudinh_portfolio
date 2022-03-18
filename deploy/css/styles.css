@@ -352,6 +352,9 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: black;
+}
 body .number {
   font-family: "Averia Libre", cursive;
   font-weight: 400;
@@ -372,7 +375,7 @@ body .number {
 }
 body .categories {
   font-weight: 400;
-  font-size: 4.375rem;
+  font-size: 3.75rem;
   margin-bottom: 30px;
   color: white;
   font-weight: 400;
@@ -461,6 +464,7 @@ figure {
   font-family: "Averia Libre", cursive;
   line-height: 88px;
   cursor: pointer;
+  display: inline-block;
 }
 #nav-container ul li button:hover {
   color: #005445;
@@ -786,7 +790,7 @@ header > div .main-tool-bar #nav-container {
   text-align: left;
   padding-top: 64px;
   display: grid;
-  grid-template-columns: 32px auto 32px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". quote1 . ";
 }
 @media (min-width: 768px) {
@@ -819,7 +823,7 @@ header > div .main-tool-bar #nav-container {
 }
 #quote1 > div p {
   font-weight: 400;
-  font-size: 4.375rem;
+  font-size: 3.125rem;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
@@ -837,7 +841,7 @@ header > div .main-tool-bar #nav-container {
   background-color: black;
   padding: 64px 0;
   display: grid;
-  grid-template-columns: 32px auto 32px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". gdfiles .";
 }
 @media (min-width: 768px) {
@@ -921,7 +925,12 @@ header > div .main-tool-bar #nav-container {
   background-image: url("../img/hanoi_poster/hanoi-poster.jpg");
   background-position: center;
   background-size: cover;
-  height: 630px;
+  height: 540px;
+}
+@media (min-width: 768px) {
+  #hanoi > div #hanoi-image {
+    height: 630px;
+  }
 }
 @media (min-width: 1024px) {
   #hanoi > div #hanoi-image {
@@ -946,11 +955,13 @@ header > div .main-tool-bar #nav-container {
   background-image: url("../img/wabisabi/wabisabi1.png");
   background-size: cover;
   background-position: center;
-  height: 540px;
+  height: 460px;
 }
 @media (min-width: 768px) {
   #wabisabi > div #wabisabi-image {
     grid-area: wabisabi-image;
+    width: auto;
+    height: 540px;
   }
 }
 @media (min-width: 1024px) {
@@ -983,11 +994,12 @@ header > div .main-tool-bar #nav-container {
   background-image: url("../img/morean/MoreanB.jpg");
   background-size: cover;
   background-position: -60px center;
-  height: 500px;
+  height: 460px;
 }
 @media (min-width: 768px) {
   #morean > div #morean-image {
     height: 540px;
+    width: auto;
     background-position: -70px center;
   }
 }
@@ -1024,7 +1036,7 @@ header > div .main-tool-bar #nav-container {
   background-image: url("../img/jeanne-gang/jeanne.png");
   background-size: cover;
   background-position: center;
-  height: 520px;
+  height: 450px;
 }
 @media (min-width: 768px) {
   #jeanne > div #jeanne-image {
@@ -1065,7 +1077,12 @@ header > div .main-tool-bar #nav-container {
   background-image: url("../img/univers/univers1.png");
   background-size: cover;
   background-position: center;
-  height: 630px;
+  height: 530px;
+}
+@media (min-width: 768px) {
+  #univers > div #u-image {
+    height: 630px;
+  }
 }
 @media (min-width: 1024px) {
   #univers > div #u-image {

@@ -17,11 +17,13 @@
             background-image: url("../img/wabisabi/wabisabi1.png");
             background-size: cover;
             background-position: center;
-            height: 540px;
-
+            height: 460px;
+           
 
             @include md {
                 grid-area: wabisabi-image;
+                width: auto;
+                height: 540px;
 
 
             }
